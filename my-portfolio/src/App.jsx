@@ -10,7 +10,7 @@ export default function App() {
   return (
     <div className="min-h-screen bg-[var(--navy)]">
       <Header />
-      <main>
+      <main className="px-[150px]">
         <Hero />
         <About />
         <Experience />
