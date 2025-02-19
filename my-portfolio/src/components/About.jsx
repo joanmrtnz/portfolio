@@ -1,13 +1,45 @@
+import useScrollAnimation from "../hooks/useScrollAnimation";
+
 export default function About() {
-    return (
-      <section id="about" className="py-20 bg-[var(--navy)] text-center">
-        <div className="container mx-auto">
-          <h2 className="text-4xl font-bold text-[var(--green)]">About me</h2>
-          <p className="mt-4 text-lg text-[var(--light-slate)]">
-          I'm a web developer with experience in React, Tailwind CSS and intuitive interface design.
+  const { ref, isVisible } = useScrollAnimation(0.5);
+
+  return (
+    <section
+      ref={ref}
+      id="about"
+      className="pt-[100px] px-20 m-auto items-start justify-center text-left bg-[var(--navy)]"
+    >
+      <h2 className={`text-4xl font-bold text-[var(--green)] transition-opacity duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}>
+      _About me
+      </h2>
+      
+      <div className="mx-auto grid grid-cols-[3fr_2fr] gap-[50px] mt-6">
+        <div name="about-text" className="text-left self-start flex flex-col">
+          <p className={`mt-4 mb-6 text-lg text-[var(--light-slate)] transition-opacity duration-700 delay-200 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}>
+            I'm a Junior Developer specialized in web technologies. My career started out of my passion for solving problems through code,
+            and since then I have been exploring modern frameworks, software architectures and agile methodologies to create quality digital experiences.
           </p>
+          <p className={`mt-12 mb-2 text-lg text-[var(--light-slate)] transition-opacity duration-700 delay-300 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}>
+            Here are a few technologies I’ve been working with recently:
+          </p>
+          <ol className={`list-disc text-md text-[var(--light-slate)] grid grid-cols-[repeat(2,minmax(140px,200px))] gap-x-3 gap-y-2 p-0 pl-5 mt-5 overflow-hidden transition-opacity duration-700 delay-300 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}>
+            <li>JavaScript (ES6+)</li>
+            <li>TypeScript</li>
+            <li>React</li>
+            <li>Eleventy</li>
+            <li>Node.js</li>
+            <li>Tailwind</li>
+          </ol>
         </div>
-      </section>
-    );
-  }
-  
+
+        <div name="about-image" className="flex items-stretch">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHg_Pxe_fit24sk4F14dfEHqdIGdCWsN6_k8kLgq4irVJuQLy4Apb6picZ26XTfM7jS68&usqp=CAUg"
+            className="w-full h-full object-cover rounded-lg filter grayscale transition-all duration-100 hover:grayscale-0 hover:scale-105"
+
+          />
+        </div>
+      </div>
+    </section>
+  );
+}
