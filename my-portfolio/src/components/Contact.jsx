@@ -1,6 +1,6 @@
 export default function Contact() {
     return (
-      <section id="contact" className="py-20 bg-[var(--navy)] text-center">
+      <section id="contact" className="bg-[var(--navy)] text-center pt-[100px]">
         <h2 className="text-4xl font-bold text-[var(--green)]">Contact</h2>
         <form className="mt-6 max-w-lg mx-auto bg-[var(--light-navy)] p-6 rounded-lg">
           <input type="text" placeholder="Your name" className="w-full p-2 border rounded-lg mb-4" />

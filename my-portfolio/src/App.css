@@ -19,9 +19,15 @@
     .delay-100 { animation-delay: 0.1s; }
     .delay-200 { animation-delay: 0.2s; }
     .delay-300 { animation-delay: 0.3s; }
+    .delay-350 { animation-delay: 0.35s; }
     .delay-400 { animation-delay: 0.4s; }
+    .delay-450 { animation-delay: 0.45s; }
     .delay-500 { animation-delay: 0.5s; }
     .delay-550 { animation-delay: 0.55s; }
+    .delay-600 { animation-delay: 0.6s; }
+    .delay-650 { animation-delay: 0.65s; }
+    .delay-700 { animation-delay: 0.7s; }
+  
   }
   
 

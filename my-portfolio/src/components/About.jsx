@@ -7,7 +7,7 @@ export default function About() {
     <section
       ref={ref}
       id="about"
-      className="pt-[100px] px-20 m-auto items-start justify-center text-left bg-[var(--navy)]"
+      className="mt-[100px] px-20 m-auto items-start justify-center text-left bg-[var(--navy)]"
     >
       <h2 className={`text-4xl font-bold text-[var(--green)] transition-opacity duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}>
       _About me
@@ -34,7 +34,7 @@ export default function About() {
 
         <div name="about-image" className="flex items-stretch">
           <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHg_Pxe_fit24sk4F14dfEHqdIGdCWsN6_k8kLgq4irVJuQLy4Apb6picZ26XTfM7jS68&usqp=CAUg"
+            src="/about_me_2.jpg"
             className={`w-full h-full object-cover rounded-lg filter grayscale hover:transition-all hover:duration-100 hover:grayscale-0 hover:scale-102 transition-opacity duration-700 delay-200 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}/>
         </div>
       </div>
