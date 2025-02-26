@@ -9,7 +9,7 @@ export default function ProjectCard({ project }) {
   return (
     <div
       ref={ref}
-      className={`mb-[80px] px-20 m-auto text-left relative transition-all duration-700 ease-in-out transform ${
+      className={`mb-[80px] m-auto text-left relative transition-all duration-700 ease-in-out transform ${
         isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
       }`}
     >

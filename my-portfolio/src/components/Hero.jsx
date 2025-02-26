@@ -26,9 +26,9 @@ export default function Hero() {
 
       <a
         href="#projects"
-        className="text-[var(--green)] bg-[var(--navy)] hover:text-[var(--white)] border border-[var(--green)] focus:ring-[var(--green)] focus:outline-none hover:shadow-lg hover:shadow-green-500/50  font-medium rounded-lg text-sm px-5 py-3.5 opacity-0 animate-fade-in-up delay-550 hover: transition-none"
-      >
-        See all my works.
+         className="text-[var(--green)] bg-[var(--navy)] border border-[var(--green)]  transition-all duration-300 
+            hover:shadow-[0_0_15px_var(--green)] hover:bg-[var(--green)] hover:text-[var(--navy)]  font-medium rounded-lg text-sm px-5 py-3.5  opacity-0 animate-fade-in-up delay-550 hover: transition-none"   
+        >See all my works.
       </a>
 
     </section>
