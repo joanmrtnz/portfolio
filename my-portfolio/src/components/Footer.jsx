@@ -27,7 +27,7 @@ export default function Footer() {
         ))}
       </div>
      
-      <p className="text-sm text-[var(--slate)] mt-4 px-4 sm:px-0">
+      <p className="text-md text-[var(--slate)] mt-4 px-4 sm:px-0">
         Built with React, Vite, and Tailwind CSS. Deployed with Vercel.
       </p>
 

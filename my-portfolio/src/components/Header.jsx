@@ -13,7 +13,7 @@ export default function Header() {
   }, [menuOpen]);
 
   return (
-    <header className="backdrop-blur-lg bg-[var(--navy)]/70 fixed top-0 w-full z-50 px-6 md:px-[50px] shadow-sm">
+    <header className="bg-[var(--navy)] bg-opacity-90 sm:backdrop-blur-lg sm:bg-[var(--navy)]/70 fixed top-0 w-full z-50 px-6 md:px-[50px] shadow-sm">
       <nav className="h-[80px] container mx-auto flex justify-between items-center font-semibold text-s/7">
         
        

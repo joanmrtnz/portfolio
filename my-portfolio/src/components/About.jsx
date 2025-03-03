@@ -9,7 +9,7 @@ export default function About() {
       id="about"
       className="mt-[100px] px-6 sm:px-12 md:px-20 m-auto text-left bg-[var(--navy)]"
     >
-      <h2 className={`text-4xl font-bold text-[var(--green)] transition-opacity duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}>
+      <h2 className={`font-mono text-4xl font-bold text-[var(--green)] transition-opacity duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}>
         _About me
       </h2>
 

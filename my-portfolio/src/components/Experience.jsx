@@ -1,7 +1,7 @@
 import useScrollAnimation from "../hooks/useScrollAnimation";
 
 export default function Experience() {
-  const { ref, isVisible } = useScrollAnimation(0.7);
+  const { ref, isVisible } = useScrollAnimation(0.5);
 
   return (
     <section
@@ -12,7 +12,7 @@ export default function Experience() {
       <div className="max-w-[650px] w-full text-center bg-[var(--navy)] p-6">
         
         <h2
-          className={`text-left text-3xl sm:text-4xl font-bold text-[var(--green)] transition-opacity duration-700 delay-200 ${
+          className={`font-mono text-left text-3xl sm:text-4xl font-bold text-[var(--green)] transition-opacity duration-700 delay-200 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
           }`}
         >

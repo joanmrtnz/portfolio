@@ -13,7 +13,7 @@ export default function Projects() {
     >
       <div className="max-w-[800px] w-full text-center bg-[var(--navy)] p-0 sm:p-6">
         <h2
-          className={`ml-4 sm:ml-8 mb-7 text-left text-3xl sm:text-4xl font-bold text-[var(--green)] transition-opacity duration-700 delay-200 ${
+          className={`font-mono ml-4 sm:ml-8 mb-7 text-left text-3xl sm:text-4xl font-bold text-[var(--green)] transition-opacity duration-700 delay-200 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
           }`}
         >
