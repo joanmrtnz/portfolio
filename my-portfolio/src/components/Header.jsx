@@ -1,8 +1,11 @@
 import { useState, useEffect } from "react";
-import { FiMenu, FiX } from "react-icons/fi";
+import { FiMenu, FiX, FiSun, FiMoon } from "react-icons/fi";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [darkMode, setDarkMode] = useState(
+    localStorage.getItem("darkMode") === "true"
+  );
 
   useEffect(() => {
     if (menuOpen) {
@@ -11,6 +14,21 @@ export default function Header() {
       document.body.classList.remove("overflow-hidden");
     }
   }, [menuOpen]);
+
+  useEffect(() => {
+    const htmlElement = document.documentElement; 
+    
+    if (darkMode) {
+      htmlElement.classList.add("dark");
+      htmlElement.classList.remove("light");
+    } else {
+      htmlElement.classList.add("light");
+      htmlElement.classList.remove("dark");
+    }
+  
+    localStorage.setItem("darkMode", darkMode);
+  }, [darkMode]);
+  
 
   return (
     <header className="bg-[var(--navy)] bg-opacity-90 sm:backdrop-blur-lg sm:bg-[var(--navy)]/70 fixed top-0 w-full z-50 px-6 md:px-[50px] shadow-sm">
@@ -27,6 +45,13 @@ export default function Header() {
 
         
         <ul className="hidden md:flex items-center text-left space-x-4">
+        <button
+          onClick={() => setDarkMode(!darkMode)}
+          className="text-[var(--lightest-slate)] text-2xl p-2 rounded-full transition-colors duration-300 hover:bg-gray-700"
+        >
+          {darkMode ? <FiSun /> : <FiMoon />}
+        </button>
+
           <li><a href="#about" className="text-[var(--lightest-slate)] hover:text-[var(--green)] px-5 py-2.5">_About</a></li>
           <li><a href="#experience" className="text-[var(--lightest-slate)] hover:text-[var(--green)] px-5 py-2.5">_Experience</a></li>
           <li><a href="#projects" className="text-[var(--lightest-slate)] hover:text-[var(--green)] px-5 py-2.5">_Projects</a></li>
@@ -58,6 +83,14 @@ export default function Header() {
           >
             <FiX />
           </button>
+             
+        <button
+          onClick={() => setDarkMode(!darkMode)}
+          className="text-[var(--lightest-slate)] text-2xl p-2 rounded-full transition-colors duration-300 hover:bg-gray-700"
+        >
+          {darkMode ? <FiSun /> : <FiMoon />}
+        </button>
+
 
           <a href="#about" onClick={() => setMenuOpen(false)} className="text-[var(--lightest-slate)] hover:text-[var(--green)]">_About</a>
           <a href="#experience" onClick={() => setMenuOpen(false)} className="text-[var(--lightest-slate)] hover:text-[var(--green)]">_Experience</a>
