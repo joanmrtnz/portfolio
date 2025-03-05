@@ -7,19 +7,21 @@ export default function About() {
     <section
       ref={ref}
       id="about"
-      className="mt-[100px] px-6 sm:px-12 md:px-20 m-auto text-left bg-[var(--navy)]"
+      className="mt-[50px] bg-[var(--navy)] min-h-screen flex items-center justify-center px-4"
     >
 
 
-      <div className="mx-auto grid grid-cols-1 md:grid-cols-[3fr_2fr] gap-6 md:gap-[50px] mt-6 items-start md:items-center">
+      <div className="max-w-[700px] w-full text-center bg-[var(--navy)] p-6">
 
         <div className="text-left flex flex-col">
-          <h2 className={`font-mono mb-6 text-3xl font-bold text-[var(--green)] transition-opacity duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}>
-            _About me
+          <h2 className={`font-mono mb-6 text-left text-3xl sm:text-4xl font-bold text-[var(--green)] transition-opacity duration-700 delay-200 ${
+            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
+          }`}>
+            About me
           </h2>
           <p className={`mt-4 mb-7 text-lg text-[var(--light-slate)] transition-opacity duration-700 delay-200 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}>
-            I'm a Junior Developer specialized in web technologies. My career started out of my passion for solving problems through code,
-            and since then I have been exploring modern frameworks, software architectures and agile methodologies to create quality digital experiences.
+            I'm a <strong>Junior Developer</strong> specialized in <strong>web technologies</strong>. My career started out of my passion for <strong>solving problems through code</strong>,
+            and since then I have been exploring <strong>modern frameworks</strong>, <strong>software architectures</strong> and <strong>agile methodologies</strong> to create <strong>quality digital experiences</strong>.
           </p>
 
           <p className={`mt-8 mb-2 text-lg text-[var(--light-slate)] transition-opacity duration-700 delay-300 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}>
@@ -27,7 +29,7 @@ export default function About() {
           </p>
 
           <div className="sm:max-w-[250px] mx-auto md:max-w-none md:mx-0">
-            <ol className={`list-disc text-md text-[var(--light-slate)] grid grid-cols-2 gap-x-6 gap-y-3 pl-6 mt-5 transition-opacity duration-700 delay-300 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}>
+            <ol className={`list-disc text-md text-[var(--white)] grid grid-cols-2 gap-x-6 gap-y-3 pl-6 mt-5 transition-opacity duration-700 delay-300 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}>
               <li>JavaScript (ES6+)</li>
               <li>TypeScript</li>
               <li>React</li>
@@ -38,12 +40,12 @@ export default function About() {
           </div>
         </div>
 
-        <div className="flex justify-center md:justify-end mt-6 md:mt-0">
+        {/* <div className="flex justify-center md:justify-end mt-6 md:mt-0">
           <a href="https://www.linkedin.com"><img
             src="/about_me_2.jpg"
             className={`w-full max-w-[250px] md:max-w-none h-auto object-cover rounded-lg filter grayscale-90  hover:grayscale-30 transition-all duration-300 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}
           /></a>
-        </div>
+        </div> */}
       </div>
     </section>
   );

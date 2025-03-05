@@ -27,10 +27,6 @@ export default function Footer() {
         ))}
       </div>
      
-      <p className="text-md text-[var(--slate)] mt-4 px-4 sm:px-0">
-        Built with React, Vite, and Tailwind CSS. Deployed with Vercel.
-      </p>
-
       <button
         onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
         className="fixed sm:absolute bottom-6 sm:top-1/2 right-4 sm:right-6 transform sm:-translate-y-1/2 px-3 py-2 sm:px-4 sm:py-3 border border-[var(--dark-slate)] rounded-lg 

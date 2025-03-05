@@ -17,7 +17,7 @@ export default function Projects() {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
           }`}
         >
-          _Projects
+          Projects
         </h2>
 
         <div className="ml-1 sm:ml-3 text-md text-[var(--slate)] grid gap-x-3 gap-y-5 p-0 sm:p-4 pl-3 sm:pl-5 mt-6">

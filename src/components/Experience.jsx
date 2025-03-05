@@ -7,7 +7,7 @@ export default function Experience() {
     <section
       ref={ref}
       id="experience"
-      className="mt-[100px] bg-[var(--navy)] min-h-screen flex items-center justify-center px-4"
+      className="mt-[50px] bg-[var(--navy)] min-h-screen flex items-center justify-center px-4"
     >
       <div className="max-w-[650px] w-full text-center bg-[var(--navy)] p-6">
         
@@ -16,7 +16,7 @@ export default function Experience() {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
           }`}
         >
-          _Experience
+          Experience
         </h2>
 
         <div className="bg-[var(--navy)] p-4 sm:p-6 rounded-lg text-left relative">
