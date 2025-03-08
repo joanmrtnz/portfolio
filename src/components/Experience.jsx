@@ -10,49 +10,61 @@ export default function Experience() {
       className="mt-[50px] bg-[var(--navy)] min-h-screen flex items-center justify-center px-4"
     >
       <div className="max-w-[650px] w-full text-center bg-[var(--navy)] p-6">
-        
+
+        {/* Título principal */}
         <h2
-          className={`font-mono text-left text-3xl sm:text-4xl font-bold text-[var(--green)] transition-opacity duration-700 delay-200 ${
-            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
-          }`}
+          className={`font-mono text-left text-3xl sm:text-4xl font-bold text-[var(--green)] transition-opacity duration-700 delay-100 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}
         >
           Experience
         </h2>
 
-        <div className="bg-[var(--navy)] p-4 sm:p-6 rounded-lg text-left relative">
-          
-          <div className={`absolute left-[-15px] sm:left-[-25px] top-0 h-full w-[1px] bg-[var(--dark-slate)] transition-opacity duration-700 delay-700 ${
-            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
-          }`}></div>
+        {/* Contenedor de la timeline */}
+        <div className="relative mt-8">
 
-          <h3
-            className={`mt-6 mb-3 sm:mb-5 text-xl sm:text-2xl text-[var(--lightest-slate)] transition-opacity duration-700 delay-300 ${
-              isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
-            }`}
-          >
-            Web Developer - [Openers & Closers]
-          </h3>
+          {/* Experiencia principal */}
+          <div className={`relative flex items-start transition-opacity duration-700 delay-300 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}>
+            <a href="#home">
+              <img
+                src="/opcl_logo.png"
+                alt="website logo"
+                className="md:w-[100px] w-[200px] opacity-80 object-contain transition-all duration-300"
+              />
+            </a>
 
-          <p
-            className={`mt-1 mb-4 text-sm text-[var(--light-slate)] transition-opacity duration-700 delay-450 ${
-              isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
-            }`}
-          >
-            2024 - Present
-          </p>
+            {/* Contenido del trabajo */}
+            <div className="pl-5 text-left">
+              <h3
+                className={`text-xl sm:text-2xl text-[var(--lightest-slate)] transition-opacity duration-700 delay-300 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}
+              >
+                Web Developer - [Openers & Closers]
+              </h3>
+              <p
+                className={`text-sm text-[var(--light-slate)] transition-opacity duration-700 delay-300 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}
+              >
+                2024 - Present
+              </p>
 
-          <div className="w-full sm:w-auto mx-auto">
-            <ol
-              className={`list-disc text-md text-[var(--slate)] grid gap-x-3 gap-y-3 p-0 pl-5 mt-5 overflow-hidden transition-opacity duration-700 delay-550 ${
-                isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
-              }`}
-            >
-              <li>Design and write unit and integration tests, ensuring optimal code coverage and reducing errors before deployment.</li>
-              <li>Implement secure authentication using OAuth 2.0 and JWT, strengthening the protection of users' sensitive data.</li>
-              <li>Develop serverless solutions on AWS Lambda, optimizing infrastructure costs and improving system scalability.</li>
-              <li>Write clear and structured technical documentation, facilitating the integration of other teams with our APIs and services.</li>
-              <li>Automate processes with CI/CD pipelines, optimizing testing and deployment times, reducing manual errors, and improving development efficiency.</li>
-            </ol>
+              <ol className={`mt-4 space-y-4 text-md text-[var(--slate)] relative transition-opacity duration-700 delay-650 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}>
+                {/* Línea vertical de la timeline */}
+                <div className="absolute left-1 top-2 w-[2px] h-full bg-[var(--dark-slate)]"></div>
+
+                {[
+                    "Design and write <strong>unit and integration tests</strong>, ensuring optimal <strong>code coverage</strong> and reducing errors before deployment.",
+                    "Implement secure authentication using <strong>OAuth 2.0</strong> and <strong>JWT</strong>, strengthening the protection of users' sensitive data.",
+                    "Develop <strong>serverless solutions</strong> on <strong>AWS Lambda</strong>, optimizing infrastructure costs and improving system scalability.",
+                    "Write clear and structured <strong>technical documentation</strong>, facilitating the integration of other teams with our <strong>APIs</strong> and services.",
+                    "Automate processes with <strong>CI/CD pipelines</strong>, optimizing testing and deployment times, reducing manual errors, and improving development efficiency.",
+                ].map((item, index) => (
+                  <li key={index} className="relative flex items-start pl-6">
+                    {/* Punto alineado con la línea */}
+                    <div className="absolute top-2 left-0 w-3 h-3 bg-[var(--green)] rounded-full"></div>
+                    {/* Texto separado de la barra */}
+                    <span className="ml-4" dangerouslySetInnerHTML={{ __html: item }}></span>
+                  </li>
+                ))}
+              </ol>
+
+            </div>
           </div>
         </div>
       </div>

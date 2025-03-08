@@ -29,7 +29,7 @@ export default function Footer() {
      
       <button
         onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-        className="fixed sm:absolute bottom-6 sm:top-1/2 right-4 sm:right-6 transform sm:-translate-y-1/2 px-3 py-2 sm:px-4 sm:py-3 border border-[var(--dark-slate)] rounded-lg 
+        className="fixed sm:absolute bottom-6 sm:top-1/2 right-4 sm:right-6 transform sm:-translate-y-1/2 px-3 py-2 sm:px-4 sm:py-3 border border-[var(--green)] rounded-lg 
         text-[var(--slate)] font-medium transition-all duration-300 hover:bg-[var(--green)] hover:text-[var(--navy)] flex items-center gap-2"
       >
         <FaArrowUp className="text-lg" />
