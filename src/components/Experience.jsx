@@ -11,17 +11,14 @@ export default function Experience() {
     >
       <div className="max-w-[650px] w-full text-center bg-[var(--navy)] p-6">
 
-        {/* Título principal */}
         <h2
           className={`font-mono text-left text-3xl sm:text-4xl font-bold text-[var(--green)] transition-opacity duration-700 delay-100 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}
         >
           Experience
         </h2>
 
-        {/* Contenedor de la timeline */}
         <div className="relative mt-8">
 
-          {/* Experiencia principal */}
           <div className={`relative flex items-start transition-opacity duration-700 delay-300 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}>
             <a href="#home">
               <img
@@ -31,7 +28,6 @@ export default function Experience() {
               />
             </a>
 
-            {/* Contenido del trabajo */}
             <div className="pl-5 text-left">
               <h3
                 className={`text-xl sm:text-2xl text-[var(--lightest-slate)] transition-opacity duration-700 delay-300 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}
@@ -45,7 +41,6 @@ export default function Experience() {
               </p>
 
               <ol className={`mt-4 space-y-4 text-md text-[var(--slate)] relative transition-opacity duration-700 delay-650 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}>
-                {/* Línea vertical de la timeline */}
                 <div className="absolute left-1 top-2 w-[2px] h-full bg-[var(--dark-slate)]"></div>
 
                 {[
@@ -56,9 +51,7 @@ export default function Experience() {
                     "Automate processes with <strong>CI/CD pipelines</strong>, optimizing testing and deployment times, reducing manual errors, and improving development efficiency.",
                 ].map((item, index) => (
                   <li key={index} className="relative flex items-start pl-6">
-                    {/* Punto alineado con la línea */}
                     <div className="absolute top-2 left-0 w-3 h-3 bg-[var(--green)] rounded-full"></div>
-                    {/* Texto separado de la barra */}
                     <span className="ml-4" dangerouslySetInnerHTML={{ __html: item }}></span>
                   </li>
                 ))}

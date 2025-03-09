@@ -1,5 +1,6 @@
 import projectsData from "../data/projectsData.json";
 import ProjectCard from "./ProjectCard";
+import VoidProjectCard from "./VoidProjectCard";
 import useScrollAnimation from "../hooks/useScrollAnimation";
 
 export default function Projects() {
@@ -21,9 +22,13 @@ export default function Projects() {
         </h2>
 
         <div className="ml-1 sm:ml-3 text-md text-[var(--slate)] grid gap-x-3 gap-y-5 p-0 sm:p-4 pl-3 sm:pl-5 mt-6">
-          {projectsData.map((project, index) => (
-            <ProjectCard key={index} project={project} />
-          ))}
+          {projectsData.map((project, index) => 
+            project.name === "Coming soon" ? (
+              <VoidProjectCard key={index} project={project}/>
+            ) : (
+              <ProjectCard key={index} project={project}/>
+            )
+          )}
         </div>
       </div>
     </section>

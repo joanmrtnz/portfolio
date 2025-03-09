@@ -8,7 +8,7 @@ export default function ProjectText({ project }) {
         <ProjectIcon />
       </h2>
       <p className="mt-4 mb-6 text-md sm:text-lg text-[var(--light-slate)] transition-opacity duration-700 delay-200">
-        {project.description}
+        <span dangerouslySetInnerHTML={{ __html: project.description }}></span>
       </p>
       <ul className="mt-2 flex flex-wrap" aria-label="Technologies used:">
         {project.technologies.map((tech) => (
