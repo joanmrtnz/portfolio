@@ -25,7 +25,7 @@ export default function ProjectCard({ project }) {
         isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
       }`}
     >
-      <a href={project.url}>
+      <a href={project.url} target="_blank" rel="noopener noreferrer">
       <div className="w-full backdrop-blur-lg bg-[var(--white)]/5 rounded-xl p-4 sm:p-4 shadow-lg group">
         <div
           className={`mx-auto grid gap-[30px] md:gap-[50px] mt-3 ${
