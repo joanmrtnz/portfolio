@@ -11,9 +11,9 @@ export default function Footer() {
       ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}
     >
       <div className="flex space-x-4 sm:space-x-6 mb-4">
-        {[{ icon: FaGithub, link: "https://github.com/tu-usuario" },
-        { icon: FaLinkedin, link: "https://www.linkedin.com/in/tu-usuario" },
-        { icon: FaTwitter, link: "https://twitter.com/tu-usuario" }].map((item, index) => (
+        {[{ icon: FaGithub, link: "https://github.com/joanmrtnz" },
+        { icon: FaLinkedin, link: "https://www.linkedin.com/in/joan-mart%C3%ADnez-744477136/" },
+        { icon: FaTwitter, link: "https://x.com/jnmrtnzdev" }].map((item, index) => (
           <a
             key={index}
             href={item.link}

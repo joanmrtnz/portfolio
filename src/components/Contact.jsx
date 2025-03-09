@@ -45,7 +45,7 @@ export default function Contact() {
 
         <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 mt-[30px] sm:mt-[50px] mb-2 items-center justify-center">
           <a
-            href="mailto:email@example.com"
+            href="mailto:info@jnmrtnz.com"
             className="text-[var(--green)] border border-[var(--green)] px-4 py-2 sm:px-6 sm:py-3 rounded-lg font-medium hover:bg-[var(--white)] 
             hover:border-[var(--white)] hover:text-[var(--navy)] transition-all duration-300"
           >
@@ -53,7 +53,7 @@ export default function Contact() {
           </a>
 
           <a
-            href="https://www.linkedin.com/"
+            href="https://www.linkedin.com/in/joan-mart%C3%ADnez-744477136/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-[var(--green)] border border-[var(--green)] px-4 py-2 sm:px-6 sm:py-3 rounded-lg font-medium hover:bg-[var(--white)] 

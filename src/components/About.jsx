@@ -39,13 +39,6 @@ export default function About() {
             </ol>
           </div>
         </div>
-
-        {/* <div className="flex justify-center md:justify-end mt-6 md:mt-0">
-          <a href="https://www.linkedin.com"><img
-            src="/about_me_2.jpg"
-            className={`w-full max-w-[250px] md:max-w-none h-auto object-cover rounded-lg filter grayscale-90  hover:grayscale-30 transition-all duration-300 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}
-          /></a>
-        </div> */}
       </div>
     </section>
   );
