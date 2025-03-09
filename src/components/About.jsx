@@ -7,7 +7,7 @@ export default function About() {
     <section
       ref={ref}
       id="about"
-      className="mt-[50px] bg-[var(--navy)] min-h-screen flex items-center justify-center px-4"
+      className="mt-[30px] bg-[var(--navy)] min-h-screen flex items-center justify-center px-4"
     >
 
 
