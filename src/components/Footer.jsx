@@ -1,4 +1,5 @@
-import { FaGithub, FaLinkedin, FaTwitter, FaArrowUp } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaArrowUp } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 import useScrollAnimation from "../hooks/useScrollAnimation";
 
 export default function Footer() {
@@ -13,7 +14,7 @@ export default function Footer() {
       <div className="flex space-x-4 sm:space-x-6 mb-4">
         {[{ icon: FaGithub, link: "https://github.com/joanmrtnz" },
         { icon: FaLinkedin, link: "https://www.linkedin.com/in/joan-mart%C3%ADnez-744477136/" },
-        { icon: FaTwitter, link: "https://x.com/jnmrtnzdev" }].map((item, index) => (
+        { icon: FaXTwitter, link: "https://x.com/jnmrtnzdev" }].map((item, index) => (
           <a
             key={index}
             href={item.link}
