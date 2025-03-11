@@ -29,11 +29,16 @@ export default function Header() {
     localStorage.setItem("darkMode", darkMode);
   }, [darkMode]);
 
+  useEffect(() => {
+    localStorage.setItem("darkMode", true);
+  }, []);
+
+
 
   return (
     <header className="bg-[var(--navy)] bg-opacity-90 sm:backdrop-blur-lg sm:bg-[var(--navy)]/70 fixed top-0 w-full z-50 px-6 md:px-[50px] shadow-sm">
-      <nav className="h-[80px] container mx-auto flex justify-between items-center font-semibold text-s/7">
-
+      <nav className="h-[80px] w-full flex items-center justify-between  font-semibold text-s/7">
+        
         <a href="#home">
           <img
             src={darkMode ? "/page-logo-dark.png" : "/page-logo-light.png"}
@@ -42,9 +47,7 @@ export default function Header() {
           />
         </a>
 
-
-
-        <ul className="hidden md:flex items-center text-left space-x-4">
+        <ul className="hidden md:flex items-center space-x-4 ml-auto">
           <button
             onClick={() => setDarkMode(!darkMode)}
             className="text-[var(--lightest-slate)] text-2xl p-2 rounded-full transition-colors duration-300 hover:bg-gray-700"
@@ -58,10 +61,10 @@ export default function Header() {
           <li><a href="#contact" className="text-[var(--lightest-slate)] hover:text-[var(--green)] px-5 py-2.5">Contact</a></li>
           <button
             type="button"
-            className="text-[var(--green)] bg-[var(--navy)] hover:text-[var(--white)] border border-[var(--green)] focus:ring-[var(--green)] focus:outline-none hover:shadow-lg hover:shadow-green-500/50 font-medium rounded-lg text-sm px-5 py-3.5"
-          >Resume</button>
+            className="text-[var(--green)] bg-[var(--navy)] hover:text-[var(--white)] border border-[var(--green)] focus:ring-[var(--green)] focus:outline-none hover:shadow-lg hover:shadow-green-500/50 font-medium rounded-lg text-sm px-5 py-3.5">
+            Resume
+          </button>
         </ul>
-
 
         <button
           className="sm:block md:hidden text-[var(--lightest-slate)] text-3xl"
