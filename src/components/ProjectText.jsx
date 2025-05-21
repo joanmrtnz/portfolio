@@ -4,10 +4,10 @@ export default function ProjectText({ project }) {
   return (
     <div name="project-text" className="self-start flex flex-col">
       <h2 className="text-lg sm:text-2xl font-bold text-[var(--text-color)] transition-opacity duration-700 group-hover:underline group-hover:text-[var(--green)] flex items-center">
-        {project.name}
+        <a href={project.gitUrl} target="_blank" rel="noopener noreferrer">{project.name}</a>
         <ProjectIcon />
       </h2>
-      <p className="mt-4 mb-6 text-md sm:text-lg text-[var(--light-slate)] transition-opacity duration-700 delay-200">
+      <p className="mt-4 mb-6 text-md sm:text-md text-[var(--light-slate)] transition-opacity duration-700 delay-200">
         <span dangerouslySetInnerHTML={{ __html: project.description }}></span>
       </p>
       <ul className="mt-2 flex flex-wrap" aria-label="Technologies used:">

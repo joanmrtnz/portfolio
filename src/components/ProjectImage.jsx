@@ -1,11 +1,13 @@
-export default function ProjectImage({ imagePath }) {
+export default function ProjectImage({ project }) {
   return (
-    <div className="flex justify-center md:justify-start">
-      <img
-        src={imagePath}
-        className="w-full sm:max-w-[350px] md:max-w-none h-auto object-cover rounded-lg md:grayscale group-hover:grayscale-0 transition-opacity duration-700 delay-200"
-        alt="Project"
-      />
-    </div>
+      <a href={project.url} target="_blank" rel="noopener noreferrer" className="flex justify-center md:justify-start">
+        <div className="flex overflow-hidden rounded-md mb-3"> 
+          <img
+            src={project.imagePath}
+            className="opacity-90 w-full sm:max-w-[350px] md:max-w-none h-auto object-cover rounded-lg  group-hover:scale-103 transform transition-transform duration-300"
+            alt={`Preview of the project ${project.name}`}
+          />
+        </div>
+      </a>
   );
 }
