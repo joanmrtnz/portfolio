@@ -7,11 +7,11 @@ export default function About() {
     <section
       ref={ref}
       id="about"
-      className="md:mt-[30px] bg-[var(--navy)] min-h-screen flex items-center justify-center px-4"
+      className="bg-[var(--navy)] min-h-screen lg:min-h-[80vh] flex items-center justify-center px-4 sm:px-8 md:px-12 lg:px-20 xl:px-32"
     >
 
 
-      <div className="max-w-[700px] w-full text-center bg-[var(--navy)] p-6">
+      <div className="max-w-[700px] md:max-w-screen-md w-full text-center bg-[var(--navy)] p-10">
 
         <div className="text-left flex flex-col">
           <h2 className={`font-mono mb-6 text-left text-3xl sm:text-4xl font-bold text-[var(--green)] transition-opacity duration-700 delay-200 ${
