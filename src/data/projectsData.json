@@ -1,15 +1,16 @@
 [
     {
-        "url": "https://github.com/joanmrtnz",
+        "gitUrl": "https://github.com/joanmrtnz/chillspace",
+        "url": "https://chillspace.app",
         "orientation": "right",
-        "name": "Example Project 1",
-        "description": "I'm a Junior Developer specialized in web technologies. My career started out of my passion for solving problems through code, and since then I have been exploring modern frameworks, software architectures and agile methodologies to create quality digital experiences.",
-        "imagePath": "https://www.codacy.com/hubfs/Featured-Image-Homepage.jpg",
+        "name": "Chill Space",
+        "description": "Web project designed to help users relax through calming themes and visuals. The site offers mood-based playlists, soothing animations, and a curated selection of wellness products available for purchase. Built with React and Tailwind CSS, it emphasizes a peaceful user experience through smooth interactions and responsive design.",
+        "imagePath": "/chillspace.png",
         "technologies": [
-            "React",
-            "Express",
-            "Github API",
-            "Heroku"
+            "Next.js",
+            "Spotify API",
+            "Tailwind",
+            "Animations"
         ]
     },
     {
