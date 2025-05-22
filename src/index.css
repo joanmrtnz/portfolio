@@ -48,20 +48,24 @@
 }
 
 .dark {
-  --background-color: #242424;
-  --text-color: rgba(255, 255, 255, 0.87);
-  --navy: #0a192f;
-  --light-navy: #112240;
-  --lightest-navy: #233554;
-  --navy-shadow: rgba(2, 12, 27, 0.7);
-  --dark-slate: #495670;
-  --slate: #8892b0;
-  --light-slate: #a8b2d1;
-  --lightest-slate: #ccd6f6;
-  --white: #e6f1ff;
-  --green: #64ffda;
-  --light-green: #b0fae8;
-  --green-tint: rgba(100, 255, 218, 0.1);
+--background-color: #1e1e1e;
+--text-color: rgba(255, 255, 255, 0.93);
+
+--navy: #1a1f2b;
+--light-navy: #2a2f3b;
+--lightest-navy: #3a3f4c;
+--navy-shadow: rgba(26, 31, 43, 0.6);
+
+--dark-slate: #5a6472;
+--slate: #99a2b4;
+--light-slate: #c3ccdc;
+--lightest-slate: #e0e6f1;
+
+--white: #f9f9fb;
+
+--green: #39ff90;
+--light-green: #a2ffc9;
+--green-tint: rgba(57, 255, 144, 0.1);
 }
 
 
