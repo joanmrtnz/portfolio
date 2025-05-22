@@ -14,14 +14,20 @@ export default function About() {
       <div className="max-w-[700px] md:max-w-screen-md w-full text-center bg-[var(--navy)] p-10">
 
         <div className="text-left flex flex-col">
-          <h2 className={`font-mono mb-6 text-left text-3xl sm:text-4xl font-bold text-[var(--green)] transition-opacity duration-700 delay-200 ${
-            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
-          }`}>
+          <h2 className={`font-mono mb-6 text-left text-3xl sm:text-4xl font-bold text-[var(--green)] transition-opacity duration-700 delay-200 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
+            }`}>
             About me
           </h2>
           <p className={`mt-4 mb-7 text-lg text-[var(--light-slate)] transition-opacity duration-700 delay-200 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}>
-            I'm a <strong>Junior Developer</strong> specialized in <strong>web technologies</strong>. My career started out of my passion for <strong>solving problems through code</strong>,
-            and since then I have been exploring <strong>modern frameworks</strong>, <strong>software architectures</strong> and <strong>agile methodologies</strong> to create <strong>quality digital experiences</strong>.
+            I'm a Developer specialized in web technologies. My career started out of my passion for <strong>solving problems through code</strong>, and since then I have been exploring modern frameworks, software architectures and agile methodologies to create <strong>quality digital experiences</strong>.
+          </p>
+
+          <p className={`mt-4 mb-7 text-lg text-[var(--light-slate)] transition-opacity duration-700 delay-200 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}>
+            Outside of coding, I enjoy <strong>Rubik’s cubes</strong>, <strong>drawing</strong>, and <strong>playing bass guitar</strong>. I’ve also competed in <strong>weightlifting</strong> (regional champion), <strong>athletics</strong>, and <strong>judo</strong>, which developed my <strong>discipline</strong>, <strong>resilience</strong>, and <strong>focus</strong>—traits I apply to my work daily.
+          </p>
+
+          <p className={`mt-4 mb-7 text-lg text-[var(--light-slate)] transition-opacity duration-700 delay-300 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}>
+            I know how to use <strong>AI tools</strong> like ChatGPT and GitHub Copilot to accelerate development, automate repetitive tasks, and enhance creativity. I’ve developed a solid understanding of how to craft <strong>effective prompts</strong> that improve code quality, boost productivity, and streamline workflows.
           </p>
 
           <p className={`mt-8 mb-2 text-lg text-[var(--light-slate)] transition-opacity duration-700 delay-300 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}>
@@ -36,6 +42,8 @@ export default function About() {
               <li>Eleventy</li>
               <li>Node.js</li>
               <li>Tailwind</li>
+              <li>AI tools</li>
+              <li>Netlify</li>
             </ol>
           </div>
         </div>

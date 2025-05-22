@@ -16,12 +16,8 @@ export default function Hero() {
         I create digital solutions for a constantly evolving world.
       </h1>
 
-      <p className="text-lg md:text-xl mt-2 md:mt-4 text-[var(--slate)] mb-3 md:mb-5 opacity-0 animate-fade-in-up delay-400">
-        Junior Web Developer
-      </p>
-
-      <p className="text-base md:text-xl mt-2 text-[var(--slate)] mb-5 md:mb-8 opacity-0 animate-fade-in-up delay-500">
-        Web developer by day, problem solver by passion, crafting engaging digital experiences.
+      <p className="font-mono text-base md:text-xl mt-2 text-[var(--slate)] mb-5 md:mb-8 opacity-0 animate-fade-in-up delay-500">
+       Modern Web Developer
       </p>
 
       <a
