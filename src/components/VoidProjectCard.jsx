@@ -19,13 +19,13 @@ export default function VoidProjectCard({ project }) {
   return (
     <div
       ref={ref}
-      className={`mb-[50px] sm:mb-[80px] m-auto text-left relative transition-all duration-700 ease-in-out transform ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
+      className={`w-full mb-[50px] sm:mb-[80px] m-auto text-left relative transition-all duration-700 ease-in-out transform ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
       <div className="w-full backdrop-blur-lg bg-[var(--white)]/5 rounded-xl p-4 sm:p-4 shadow-lg group">
         <div className="mx-auto grid gap-[15px] md:gap-[50px] mt-3 grid-cols-1 md:grid-cols-[3fr_2fr]">
           {isMobile ? (
             <>
               <div className="flex justify-center md:justify-start mr-1">
-                <p className="backdrop-blur-lg bg-[var(--white)]/5 min-w-[250px] min-h-[100px] sm:max-w-[350px] md:max-w-none rounded-lg animate-pulse"></p>
+                <p className="w-full min-w-[250px] md:min-w-[300px] max-w-full min-h-[200px] rounded-lg backdrop-blur-lg bg-[var(--white)]/5 animate-pulse"></p>
               </div>
               <div name="project-text" className="self-start flex flex-col">
                 <h2 className="min-h-[30px] backdrop-blur-lg bg-[var(--white)]/5 rounded-xl transition-opacity duration-700  flex items-center animate-pulse">
