@@ -31,7 +31,7 @@ export default function About() {
           </p>
 
           <p className={`mt-8 mb-2 text-lg text-[var(--light-slate)] transition-opacity duration-700 delay-300 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}>
-            Here are a few technologies I’ve been working with recently:
+            Technologies I've worked with recently include:
           </p>
 
           <div className="sm:max-w-[250px] mx-auto md:max-w-none md:mx-0">
