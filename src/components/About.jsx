@@ -34,8 +34,8 @@ export default function About() {
             Technologies I've worked with recently include:
           </p>
 
-          <div className="sm:max-w-[250px] mx-auto md:max-w-none md:mx-0">
-            <ol className={`list-disc text-md text-[var(--white)] grid grid-cols-2 gap-x-6 gap-y-3 pl-6 mt-5 transition-opacity duration-700 delay-300 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}>
+          <div className="font-mono sm:max-w-[250px] mx-auto md:max-w-none md:mx-0">
+            <ol className={`list-disc text-sm text-[var(--green)] grid grid-cols-2 gap-x-6 gap-y-3 pl-6 mt-5 transition-opacity duration-700 delay-300 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}>
               <li>JavaScript (ES6+)</li>
               <li>TypeScript</li>
               <li>React</li>
