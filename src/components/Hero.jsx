@@ -20,14 +20,16 @@ export default function Hero() {
        Modern Web Developer
       </p>
 
-      <a
-        href="#projects"
-        className="text-[var(--green)] bg-[var(--navy)] border border-[var(--green)] transition-all 
-          hover:transition-none hover:shadow-[0_0_15px_var(--green)] hover:bg-[var(--green)] hover:text-[var(--navy)] 
-          font-medium rounded-lg text-sm md:text-base px-5 py-3 opacity-0 animate-fade-in-up delay-550"
-      >
-        See all my works.
-      </a>
+      <div className="transition-all opacity-0 animate-fade-in-up delay-550">  
+        <a
+          href="#projects"
+          className="text-[var(--green)] bg-[var(--navy)] border border-[var(--green)] 
+            hover:shadow-[0_0_15px_var(--green)] hover:bg-[var(--green)] hover:text-[var(--navy)]
+            font-medium rounded-lg text-sm md:text-base px-5 py-3"
+        >
+          See all my works.
+        </a>
+      </div>
     </section>
   );
 }
