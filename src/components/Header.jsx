@@ -38,7 +38,7 @@ export default function Header() {
   return (
     <header className="bg-[var(--navy)] bg-opacity-90 sm:backdrop-blur-lg sm:bg-[var(--navy)]/70 fixed top-0 w-full z-50 px-6 md:px-[50px] shadow-sm">
       <nav className="h-[80px] w-full flex items-center justify-between  font-semibold text-s/7">
-        
+
         <a href="#home">
           <img
             src={darkMode ? "/page-logo-dark.png" : "/page-logo-light.png"}
@@ -61,7 +61,9 @@ export default function Header() {
           <li><a href="#contact" className="text-[var(--lightest-slate)] hover:text-[var(--green)] px-5 py-2.5">Contact</a></li>
           <button
             type="button"
-            className="text-[var(--green)] bg-[var(--navy)] hover:text-[var(--white)] border border-[var(--green)] focus:ring-[var(--green)] focus:outline-none hover:shadow-lg hover:shadow-green-500/50 font-medium rounded-lg text-sm px-5 py-3.5">
+            className="text-[var(--green)] bg-[var(--navy)] border border-[var(--green)] transition-all 
+          hover:transition-none hover:shadow-[0_0_15px_var(--green)] hover:bg-[var(--green)] hover:text-[var(--navy)] 
+          font-medium rounded-lg text-sm md:text-base px-5 py-3">
             Resume
           </button>
         </ul>
