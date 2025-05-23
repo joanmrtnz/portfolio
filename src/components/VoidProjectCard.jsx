@@ -25,10 +25,10 @@ export default function VoidProjectCard({ project }) {
           {isMobile ? (
             <>
               <div className="flex justify-center md:justify-start mr-1">
-                <p className="w-full min-w-[250px] md:min-w-[300px] max-w-full min-h-[200px] rounded-lg backdrop-blur-lg bg-[var(--white)]/5 animate-pulse"></p>
+                <p className="w-full min-w-[250px] md:min-w-[300px] max-w-full min-h-[80px] rounded-lg backdrop-blur-lg bg-[var(--white)]/5 animate-pulse"></p>
               </div>
               <div name="project-text" className="self-start flex flex-col">
-                <h2 className="min-h-[30px] backdrop-blur-lg bg-[var(--white)]/5 rounded-xl transition-opacity duration-700  flex items-center animate-pulse">
+                <h2 className="min-h-[20px] backdrop-blur-lg bg-[var(--white)]/5 rounded-xl transition-opacity duration-700  flex items-center animate-pulse">
                 </h2>
                 <p className="min-h-[10px] text-md text-[var(--slate)] rounded-xl mt-4 mb-6 ml-1 animate-pulse">
                   {project.name}
@@ -47,7 +47,7 @@ export default function VoidProjectCard({ project }) {
               <div name="project-text" className="self-start flex flex-col">
                 <h2 className="min-h-[30px] backdrop-blur-lg bg-[var(--white)]/5 rounded-xl transition-opacity duration-700  flex items-center animate-pulse">
                 </h2>
-                <p className="min-h-[150px] backdrop-blur-lg bg-[var(--white)]/5 rounded-xl mt-4 mb-6 animate-pulse">
+                <p className="min-h-[80px] backdrop-blur-lg bg-[var(--white)]/5 rounded-xl mt-4 mb-6 animate-pulse">
                 </p>
                 <p className="min-h-[10px] text-md text-[var(--slate)] rounded-xl mt-4 mb-6 ml-1 animate-pulse">
                   {project.name}
