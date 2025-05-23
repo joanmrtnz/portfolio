@@ -4,7 +4,7 @@
         "url": "https://chillspace.app",
         "orientation": "right",
         "name": "Chill Space",
-        "description": "Web project designed to help users relax through calming themes and visuals. The site offers mood-based playlists, soothing animations, and a curated selection of wellness products available for purchase. Built with React and Tailwind CSS, it emphasizes a peaceful user experience through smooth interactions and responsive design.",
+        "description": "Website featuring mood-based playlists via the Spotify API, relaxing animations, and wellness products for purchase. Built with Next.js (React) and Tailwind CSS.",
         "imagePath": "/chillspace.png",
         "technologies": [
             "Next.js",
