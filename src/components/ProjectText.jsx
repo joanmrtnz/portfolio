@@ -7,7 +7,7 @@ export default function ProjectText({ project }) {
         <a href={project.gitUrl} target="_blank" rel="noopener noreferrer">{project.name}</a>
         <ProjectIcon />
       </h2>
-      <p className="mt-4 mb-6 text-md sm:text-md text-[var(--light-slate)] transition-opacity duration-700 delay-200">
+      <p className="mt-4 mb-6 text-md sm:text-md text-[var(--slate)] transition-opacity duration-700 delay-200">
         <span dangerouslySetInnerHTML={{ __html: project.description }}></span>
       </p>
       <ul className="mt-2 flex flex-wrap" aria-label="Technologies used:">
