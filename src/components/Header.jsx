@@ -104,7 +104,9 @@ export default function Header() {
            href="/joan_martinez_CV.pdf"
             type="button"
             onClick={() => setMenuOpen(false)}
-            className="text-[var(--green)] bg-[var(--navy)] border border-[var(--green)] focus:outline-none hover:shadow-lg hover:shadow-green-500/50 font-medium rounded-lg text-lg px-6 py-3"
+            className="text-[var(--green)] bg-[var(--navy)] border border-[var(--green)] transition-all 
+          hover:transition-none hover:shadow-[0_0_15px_var(--green)] hover:bg-[var(--green)] hover:text-[var(--navy)] 
+          font-medium rounded-lg text-lg px-6 py-3"
           >Resume</a>
         </div>
       </nav>
