@@ -59,13 +59,13 @@ export default function Header() {
           <li><a href="#experience" className="text-[var(--lightest-slate)] hover:text-[var(--green)] px-5 py-2.5">Experience</a></li>
           <li><a href="#projects" className="text-[var(--lightest-slate)] hover:text-[var(--green)] px-5 py-2.5">Projects</a></li>
           <li><a href="#contact" className="text-[var(--lightest-slate)] hover:text-[var(--green)] px-5 py-2.5">Contact</a></li>
-          <button
-            type="button"
+          <a
+           href="/joan_martinez_CV.pdf"
             className="text-[var(--green)] bg-[var(--navy)] border border-[var(--green)] transition-all 
           hover:transition-none hover:shadow-[0_0_15px_var(--green)] hover:bg-[var(--green)] hover:text-[var(--navy)] 
           font-medium rounded-lg text-sm md:text-base px-5 py-3">
             Resume
-          </button>
+          </a>
         </ul>
 
         <button
@@ -100,11 +100,12 @@ export default function Header() {
           <a href="#experience" onClick={() => setMenuOpen(false)} className="text-[var(--lightest-slate)] hover:text-[var(--green)]">Experience</a>
           <a href="#projects" onClick={() => setMenuOpen(false)} className="text-[var(--lightest-slate)] hover:text-[var(--green)]">Projects</a>
           <a href="#contact" onClick={() => setMenuOpen(false)} className="text-[var(--lightest-slate)] hover:text-[var(--green)]">Contact</a>
-          <button
+         <a
+           href="/joan_martinez_CV.pdf"
             type="button"
             onClick={() => setMenuOpen(false)}
             className="text-[var(--green)] bg-[var(--navy)] border border-[var(--green)] focus:outline-none hover:shadow-lg hover:shadow-green-500/50 font-medium rounded-lg text-lg px-6 py-3"
-          >Resume</button>
+          >Resume</a>
         </div>
       </nav>
     </header>
