@@ -1,7 +1,7 @@
 import useScrollAnimation from "../hooks/useScrollAnimation";
 
 export default function About() {
-  const { ref, isVisible } = useScrollAnimation(0.5);
+  const { ref, isVisible } = useScrollAnimation(0.3);
 
   return (
     <section
@@ -18,24 +18,24 @@ export default function About() {
             }`}>
             About me
           </h2>
-          <p className={`mt-4 mb-7 text-lg text-[var(--light-slate)] transition-opacity duration-700 delay-200 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}>
+          <p className={`mt-4 mb-7 text-lg text-[var(--light-slate)] transition-opacity duration-700 delay-400 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}>
             I'm a Developer specialized in web technologies. My career started out of my passion for <strong>solving problems through code</strong>, and since then I have been exploring modern frameworks, software architectures and agile methodologies to create <strong>quality digital experiences</strong>.
           </p>
 
-          <p className={`mt-4 mb-7 text-lg text-[var(--light-slate)] transition-opacity duration-700 delay-200 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}>
+          <p className={`mt-4 mb-7 text-lg text-[var(--light-slate)] transition-opacity duration-700 delay-600 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}>
             Outside of coding, I enjoy <strong>Rubik’s cubes</strong>, <strong>drawing</strong>, and <strong>playing bass guitar</strong>. I’ve also competed in <strong>weightlifting</strong> (regional champion), <strong>athletics</strong>, and <strong>judo</strong>, which developed my <strong>discipline</strong>, <strong>resilience</strong>, and <strong>focus</strong>—traits I apply to my work daily.
           </p>
 
-          <p className={`mt-4 mb-7 text-lg text-[var(--light-slate)] transition-opacity duration-700 delay-300 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}>
+          <p className={`mt-4 mb-7 text-lg text-[var(--light-slate)] transition-opacity duration-700 delay-800 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}>
             I know how to use <strong>AI tools</strong> like ChatGPT and GitHub Copilot to accelerate development, automate repetitive tasks, and enhance creativity. I’ve developed a solid understanding of how to craft <strong>effective prompts</strong> that improve code quality, boost productivity, and streamline workflows.
           </p>
 
-          <p className={`mt-8 mb-2 text-lg text-[var(--light-slate)] transition-opacity duration-700 delay-300 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}>
+          <p className={`mt-8 mb-2 text-lg text-[var(--light-slate)] transition-opacity duration-700 delay-800 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}>
             Technologies I've worked with recently include:
           </p>
 
           <div className="font-mono sm:max-w-[250px] mx-auto md:max-w-none md:mx-0">
-            <ol className={`list-disc text-sm text-[var(--green)] grid grid-cols-2 gap-x-6 gap-y-3 pl-6 mt-5 transition-opacity duration-700 delay-300 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}>
+            <ol className={`list-disc text-sm text-[var(--green)] grid grid-cols-2 gap-x-6 gap-y-3 pl-6 mt-5 transition-opacity duration-700 delay-800 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}>
               <li>JavaScript (ES6+)</li>
               <li>TypeScript</li>
               <li>React</li>
