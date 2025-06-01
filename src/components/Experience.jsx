@@ -44,11 +44,11 @@ export default function Experience() {
                 <div className="absolute left-1 top-2 w-[2px] h-full bg-[var(--dark-slate)]"></div>
 
                 {[
-                    "Design and write <strong>unit and integration tests</strong>, ensuring optimal <strong>code coverage</strong> and reducing errors before deployment.",
-                    "Implement secure authentication using <strong>OAuth 2.0</strong> and <strong>JWT</strong>, strengthening the protection of users' sensitive data.",
-                    "Develop <strong>serverless solutions</strong> on <strong>AWS Lambda</strong>, optimizing infrastructure costs and improving system scalability.",
-                    "Write clear and structured <strong>technical documentation</strong>, facilitating the integration of other teams with our <strong>APIs</strong> and services.",
-                    "Automate processes with <strong>CI/CD pipelines</strong>, optimizing testing and deployment times, reducing manual errors, and improving development efficiency.",
+                  "Created dynamic front-end views with <strong>React.js</strong>, integrating components and managing UI state with <strong>Hooks</strong>.",
+                  "Built responsive and accessible UIs with <strong>HTML5</strong>, <strong>CSS3</strong>, and <strong>Tailwind CSS</strong> following a <strong>mobile-first</strong> approach.",
+                  "Integrated the front-end with <strong>RESTful APIs</strong>, handling <strong>asynchronous data fetching</strong> and error states.",
+                  "Designed and developed <strong>unit and integration tests</strong>, ensuring high <strong>code coverage</strong> and reducing production errors.",
+                  "Collaborated in an <strong>Agile</strong> team (<strong>Scrum/Kanban</strong>): daily stand-ups, sprint planning, and retrospectives."
                 ].map((item, index) => (
                   <li key={index} className="relative flex items-start pl-6">
                     <div className="absolute top-2 left-0 w-3 h-3 bg-[var(--green)] rounded-full"></div>
