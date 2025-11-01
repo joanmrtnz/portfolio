@@ -1,0 +1,31 @@
+[
+    {
+        "position": "Full Stack Developer",
+        "company":" Athenea Solutions",
+        "imagePath":"/athenea-solutions.png",
+        "date":{
+            "start": "2025"      
+        },
+        "tasks": [
+                "Developed <strong>scalable</strong> and <strong>secure</strong> web and mobile applications in the <strong>healthcare sector</strong>, improving system <strong>reliability</strong> and <strong>performance</strong>.",
+                "Built and maintained <strong>backend services</strong> using <strong>Symfony (PHP)</strong> and <strong>NestJS</strong>, optimizing <strong>API response times</strong> and <strong>code maintainability</strong>.",
+                "Integrated <strong>NoSQL databases (MongoDB)</strong> and implemented <strong>pipelines</strong> to automate <strong>deployment</strong> and <strong>testing workflows</strong>."
+            ]
+    },
+    {
+        "position": "Web Developer",
+        "company":"Openers & Closers",
+        "imagePath":"/opcl_logo.jpg",
+        "date":{
+            "start": "2024",
+            "end": "2025"
+        },
+        "tasks": [
+                "Created dynamic front-end views with <strong>React.js</strong>, integrating components and managing UI state with <strong>Hooks</strong>.",
+                "Built responsive and accessible UIs with <strong>HTML5</strong>, <strong>CSS3</strong>, and <strong>Tailwind CSS</strong> following a <strong>mobile-first</strong> approach.",
+                "Integrated the front-end with <strong>RESTful APIs</strong>, handling <strong>asynchronous data fetching</strong> and error states.",
+                "Designed and developed <strong>unit and integration tests</strong>, ensuring high <strong>code coverage</strong> and reducing production errors.",
+                "Collaborated in an <strong>Agile</strong> team (<strong>Scrum/Kanban</strong>): daily stand-ups, sprint planning, and retrospectives."
+            ]
+    }
+]
