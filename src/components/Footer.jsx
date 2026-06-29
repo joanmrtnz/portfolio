@@ -8,7 +8,7 @@ export default function Footer() {
   return (
     <footer
       ref={ref}
-      className={`relative bg-[var(--navy)] text-[var(--light-slate)] py-8 sm:py-10 mt-10 flex flex-col items-center text-center transition-all duration-500 
+      className={`relative text-[var(--light-slate)] py-8 sm:py-10 mt-10 flex flex-col items-center text-center transition-all duration-500 
       ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}
     >
       <div className="flex space-x-4 sm:space-x-6 mb-4">

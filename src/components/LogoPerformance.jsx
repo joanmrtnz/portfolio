@@ -7,22 +7,48 @@ const CONFIGS = {
     tileMaxW: 34,
     tileMinH: 12,
     tileMaxH: 30,
-    particleCount: 75,
-    particleSizeMin: 10,
-    particleSizeMax: 18,
-    particleDistanceScale: 1,
-    particleTargetScale: 1,
+    particleCount: 70,
+    particleSizeMin: 24,
+    particleSizeMax: 35,
+    particleDistanceScale: 1.98,
+    particleTargetScale: 1.87,
     particleDurationMin: 5.0,
     particleDurationMax: 9.0,
+  },
+  largeDesktop: {
+    tileMinW: 10,
+    tileMaxW: 34,
+    tileMinH: 12,
+    tileMaxH: 30,
+    particleCount: 95,
+    particleSizeMin: 24,
+    particleSizeMax: 39,
+    particleDistanceScale: 2.33,
+    particleTargetScale: 2.18,
+    particleDurationMin: 5.5,
+    particleDurationMax: 9.5,
+  },
+  wideDesktop: {
+    tileMinW: 10,
+    tileMaxW: 34,
+    tileMinH: 12,
+    tileMaxH: 30,
+    particleCount: 115,
+    particleSizeMin: 24,
+    particleSizeMax: 45,
+    particleDistanceScale: 2.78,
+    particleTargetScale: 2.55,
+    particleDurationMin: 6.0,
+    particleDurationMax: 10.0,
   },
   mobile: {
     tileMinW: 20,
     tileMaxW: 46,
     tileMinH: 18,
     tileMaxH: 40,
-    particleCount: 38,
-    particleSizeMin: 12,
-    particleSizeMax: 22,
+    particleCount: 60,
+    particleSizeMin: 18,
+    particleSizeMax: 26,
     particleDistanceScale: 0.9,
     particleTargetScale: 0.72,
     particleDurationMin: 6.5,
@@ -33,9 +59,9 @@ const CONFIGS = {
     tileMaxW: 52,
     tileMinH: 22,
     tileMaxH: 44,
-    particleCount: 30,
-    particleSizeMin: 11,
-    particleSizeMax: 20,
+    particleCount: 40,
+    particleSizeMin: 13,
+    particleSizeMax: 22,
     particleDistanceScale: 0.82,
     particleTargetScale: 0.65,
     particleDurationMin: 7.5,
@@ -57,6 +83,14 @@ function getConfigKey() {
 
   if (window.matchMedia("(max-width: 600px)").matches) {
     return "mobile";
+  }
+
+  if (window.matchMedia("(min-width: 1536px)").matches) {
+    return "wideDesktop";
+  }
+
+  if (window.matchMedia("(min-width: 1280px)").matches) {
+    return "largeDesktop";
   }
 
   return "desktop";
@@ -83,7 +117,7 @@ function createTiles(config) {
           "--a2": random(0.72, 1),
           "--shine": random(0.18, 0.56),
           "--delay": `${random(-3.2, 0)}s`,
-          "--speed-slow": `${random(2.0, 3.4)}s`,
+          "--speed-slow": `${random(5.0, 6.4)}s`,
           "--tex-x": `${random(-120, 120)}px`,
           "--tex-y": `${random(-120, 120)}px`,
           "--tex-size": `${random(90, 180)}px`,
@@ -144,6 +178,8 @@ export default function LogoPerformance() {
     const mediaQueries = [
       window.matchMedia("(max-width: 380px)"),
       window.matchMedia("(max-width: 600px)"),
+      window.matchMedia("(min-width: 1280px)"),
+      window.matchMedia("(min-width: 1536px)"),
     ];
 
     const syncConfig = () => setConfigKey(getConfigKey());

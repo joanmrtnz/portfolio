@@ -7,11 +7,11 @@ export default function About() {
     <section
       ref={ref}
       id="about"
-      className="bg-[var(--navy)] min-h-screen lg:min-h-[80vh] flex items-center justify-center px-4 sm:px-8 md:px-12 lg:px-20 xl:px-32"
+      className="min-h-screen lg:min-h-[80vh] flex items-center justify-center px-4 sm:px-8 md:px-12 lg:px-20 xl:px-32"
     >
 
 
-      <div className="max-w-[700px] md:max-w-screen-md w-full text-center bg-[var(--navy)] p-10">
+      <div className="max-w-[700px] md:max-w-screen-md w-full text-center p-10">
 
         <div className="text-left flex flex-col">
           <h2 className={`font-mono mb-6 text-left text-3xl sm:text-4xl font-bold text-[var(--green)] transition-opacity duration-700 delay-200 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
@@ -19,7 +19,7 @@ export default function About() {
             About me
           </h2>
           <p className={`mt-4 mb-7 text-lg text-[var(--light-slate)] transition-opacity duration-700 delay-400 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}>
-            I'm a Developer specialized in web technologies. My career started out of my passion for <strong>solving problems through code</strong>, and since then I have been exploring modern frameworks, software architectures and agile methodologies to create <strong>quality digital experiences</strong>.
+            I&apos;m a Developer specialized in web technologies. My career started out of my passion for <strong>solving problems through code</strong>, and since then I have been exploring modern frameworks, software architectures and agile methodologies to create <strong>quality digital experiences</strong>.
           </p>
 
           <p className={`mt-4 mb-7 text-lg text-[var(--light-slate)] transition-opacity duration-700 delay-600 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}>
@@ -31,7 +31,7 @@ export default function About() {
           </p>
 
           <p className={`mt-8 mb-2 text-lg text-[var(--light-slate)] transition-opacity duration-700 delay-800 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}>
-            Technologies I've worked with recently include:
+            Technologies I&apos;ve worked with recently include:
           </p>
 
           <div className="font-mono sm:max-w-[250px] mx-auto md:max-w-none md:mx-0">
