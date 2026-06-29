@@ -1,4 +1,5 @@
 import Header from "./components/Header";
+import LogoPerformance from "./components/LogoPerformance";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Experience from "./components/Experience";
@@ -11,7 +12,10 @@ export default function App() {
     <div className="min-h-screen bg-[var(--navy)]">
       <Header />
       <main className="px-6 sm:px-12 md:px-24 lg:px-32 xl:px-[150px]">
-        <Hero />
+        <div className="relative md:min-h-[95vh]">
+          <LogoPerformance />
+          <Hero />
+        </div>
         <About />
         <Experience />
         <Projects />

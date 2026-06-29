@@ -2,10 +2,10 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="min-h-screen md:min-h-[95vh] pt-[100px] flex flex-col items-start justify-center text-left px-6 md:px-20 m-auto bg-[var(--navy)]"
+      className="relative z-10 pt-40 md:pt-34 pb-30 md:pb-20 md:min-h-[95vh] flex flex-col items-start justify-center text-left px-0 m-auto md:bg-transparent"
     >
       <p className="font-mono text-lg md:text-xl text-[var(--green)] mb-3 md:mb-5 opacity-0 animate-fade-in-up delay-100">
-        Hello, I'm
+        Hello, I&apos;m
       </p>
 
       <h1 className="text-4xl md:text-7xl text-[var(--lightest-slate)] font-bold mb-3 md:mb-5 opacity-0 animate-fade-in-up delay-200">

@@ -1,0 +1,309 @@
+.logo-performance-section {
+  position: absolute;
+  left: 50%;
+  width: 100dvw;
+  height: clamp(280px, 58vw, 380px);
+  margin-left: 0;
+  overflow: hidden;
+  pointer-events: none;
+  background: var(--navy);
+  transform: translateX(-50%);
+  z-index: 0;
+}
+
+.logo-performance-scene {
+  --logo-scale: 1;
+  --tile-border-size: 1px;
+  --tile-border-color: rgba(0, 115, 27, 0.75);
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  opacity: 0.92;
+}
+
+.logo-performance-ambient-glow {
+  position: absolute;
+  width: 260px;
+  height: 260px;
+  left: 50%;
+  top: 52%;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(circle, rgba(80, 255, 60, 0.08), transparent 68%);
+  filter: blur(18px);
+  animation: logo-performance-breathe 4s ease-in-out infinite alternate;
+  pointer-events: none;
+}
+
+.logo-performance-logo {
+  width: 360px;
+  height: 300px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -40%) scale(var(--logo-scale));
+  transform-origin: center;
+  overflow: hidden;
+  -webkit-mask:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 360 300'%3E%3Cg transform='translate(32 0) scale(.82 1)'%3E%3Ctext x='0' y='262' font-size='300' font-family='Arial,sans-serif' font-weight='700' fill='white'%3Em%3C/text%3E%3C/g%3E%3C/svg%3E")
+    center / contain no-repeat;
+  mask:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 360 300'%3E%3Cg transform='translate(32 0) scale(.82 1)'%3E%3Ctext x='0' y='262' font-size='300' font-family='Arial,sans-serif' font-weight='700' fill='white'%3Em%3C/text%3E%3C/g%3E%3C/svg%3E")
+    center / contain no-repeat;
+  filter:
+    drop-shadow(0 0 4px rgba(170, 255, 110, 0.95))
+    drop-shadow(0 0 16px rgba(60, 255, 80, 0.9))
+    drop-shadow(0 0 38px rgba(0, 180, 60, 0.55));
+}
+
+.logo-performance-logo::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 35% 25%, rgba(180, 255, 120, 0.25), transparent 30%),
+    linear-gradient(135deg, rgba(255, 255, 255, 0.2), transparent 35%, rgba(0, 0, 0, 0.25));
+  mix-blend-mode: screen;
+  pointer-events: none;
+  z-index: 5;
+}
+
+.logo-performance-tile {
+  position: absolute;
+  overflow: hidden;
+  background: transparent;
+  border: var(--tile-border-size) solid var(--tile-border-color);
+  border-radius: 1px;
+  box-shadow:
+    inset 0 0 6px rgba(255, 255, 255, 0.25),
+    inset 0 0 18px rgba(0, 25, 5, 0.75),
+    0 0 5px rgba(90, 255, 70, 0.35);
+}
+
+.logo-performance-tile::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 30% 20%, rgba(255, 255, 255, 0.32), transparent 28%),
+    linear-gradient(
+      135deg,
+      hsla(var(--hue), 95%, 64%, var(--a2)),
+      hsla(var(--hue), 90%, 30%, var(--a1)) 55%,
+      hsla(var(--hue), 95%, 16%, var(--a2))
+    ),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180' viewBox='0 0 180 180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.035 .085' numOctaves='5' seed='8'/%3E%3CfeColorMatrix type='matrix' values='1.8 0 0 0 -.35  0 1.8 0 0 -.35  0 0 1.8 0 -.35  0 0 0 .9 0'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23n)' opacity='.8'/%3E%3Cpath d='M-20 150 C40 95 55 20 120 -10 M10 190 C70 130 80 65 180 30 M-10 70 C55 40 95 85 190 55 M35 -20 C70 45 55 100 115 190' stroke='white' stroke-opacity='.35' stroke-width='2' fill='none'/%3E%3Cpath d='M0 120 C35 95 80 125 130 90 C160 70 175 75 200 65' stroke='black' stroke-opacity='.28' stroke-width='3' fill='none'/%3E%3C/svg%3E");
+  background-size: auto, auto, var(--tex-size) var(--tex-size);
+  background-position: center, center, var(--tex-x) var(--tex-y);
+  background-blend-mode: screen, normal, screen;
+  animation: logo-performance-crystal-pulse var(--speed-slow) ease-in-out infinite alternate;
+  animation-delay: var(--delay);
+  pointer-events: none;
+  will-change: opacity, filter;
+}
+
+.logo-performance-tile::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.55) 0%,
+      rgba(255, 255, 255, 0.12) 18%,
+      transparent 42%,
+      rgba(0, 0, 0, 0.28) 100%
+    );
+  box-shadow:
+    inset 1px 1px 2px rgba(255, 255, 255, 0.45),
+    inset -2px -2px 4px rgba(0, 0, 0, 0.45);
+  opacity: var(--shine);
+  pointer-events: none;
+}
+
+.logo-performance-particles {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.logo-performance-particle {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: auto;
+  height: auto;
+  background: transparent;
+  border-radius: 0;
+  color: rgba(80, 255, 124, 0.95);
+  font-family: "Courier New", monospace;
+  font-size: var(--size);
+  font-weight: 700;
+  line-height: 1;
+  text-shadow:
+    0 0 6px rgba(0, 255, 94, 0.95),
+    0 0 14px rgba(80, 255, 130, 0.7),
+    0 0 24px rgba(80, 255, 130, 0.35);
+  user-select: none;
+  animation: logo-performance-absorb var(--duration) cubic-bezier(.34, .01, .38, 1) infinite;
+  animation-delay: var(--delay);
+  transform-origin: center;
+  will-change: transform, opacity;
+}
+
+@keyframes logo-performance-breathe {
+  from {
+    opacity: 0.22;
+    transform: translate(-50%, -50%) scale(0.9);
+  }
+
+  to {
+    opacity: 0.48;
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+}
+
+@keyframes logo-performance-crystal-pulse {
+  from {
+    opacity: 0.18;
+    filter: brightness(0.45) saturate(0.7);
+  }
+
+  to {
+    opacity: 1;
+    filter: brightness(1.55) saturate(1.8);
+  }
+}
+
+@keyframes logo-performance-crystal-pulse-mobile {
+  from {
+    opacity: 0.28;
+  }
+
+  to {
+    opacity: 0.85;
+  }
+}
+
+@keyframes logo-performance-absorb {
+  0% {
+    transform: translate(var(--x0), var(--y0)) scale(1) rotate(0deg);
+    opacity: 0;
+  }
+
+  12% {
+    opacity: 1;
+  }
+
+  75% {
+    opacity: 0.95;
+  }
+
+  100% {
+    transform: translate(var(--x1), var(--y1)) scale(0.08) rotate(260deg);
+    opacity: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .logo-performance-section {
+    height: clamp(320px, 78vw, 430px);
+    margin-top: 4.75rem;
+    opacity: 0.54;
+  }
+
+  .logo-performance-scene {
+    --logo-scale: 0.92;
+    --tile-border-size: 0.6px;
+    --tile-border-color: rgba(0, 115, 27, 0.6);
+  }
+
+  .logo-performance-logo {
+    left: 50%;
+    transform: translate(-40%, -50%) scale(var(--logo-scale));
+    filter:
+      drop-shadow(0 0 3px rgba(170, 255, 110, 0.65))
+      drop-shadow(0 0 12px rgba(60, 255, 80, 0.45));
+  }
+
+  .logo-performance-ambient-glow {
+    width: 210px;
+    height: 210px;
+    background: radial-gradient(circle, rgba(80, 255, 60, 0.045), transparent 70%);
+    filter: blur(14px);
+  }
+
+  .logo-performance-tile {
+    box-shadow:
+      inset 0 0 4px rgba(255, 255, 255, 0.14),
+      inset 0 0 10px rgba(0, 25, 5, 0.55);
+  }
+
+  .logo-performance-tile::before {
+    animation-name: logo-performance-crystal-pulse-mobile;
+    filter: none;
+  }
+
+  .logo-performance-tile::after {
+    box-shadow:
+      inset 1px 1px 1px rgba(255, 255, 255, 0.3),
+      inset -1px -1px 3px rgba(0, 0, 0, 0.35);
+  }
+
+  .logo-performance-particle {
+    text-shadow:
+      0 0 4px rgba(0, 255, 94, 0.75),
+      0 0 8px rgba(80, 255, 130, 0.45);
+  }
+}
+
+@media (max-width: 380px) {
+  .logo-performance-scene {
+    --logo-scale: 0.82;
+    --tile-border-size: 0.5px;
+  }
+
+  .logo-performance-ambient-glow {
+    width: 180px;
+    height: 180px;
+    background: radial-gradient(circle, rgba(80, 255, 60, 0.035), transparent 72%);
+  }
+}
+
+@media (min-width: 768px) {
+  .logo-performance-section {
+    position: absolute;
+    inset: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    min-height: 95vh;
+    margin-top: 0;
+    opacity: 0.34;
+    transform: none;
+    z-index: 0;
+  }
+
+  .logo-performance-scene {
+    --logo-scale: 1.45;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .logo-performance-tile::before,
+  .logo-performance-particle,
+  .logo-performance-ambient-glow {
+    animation: none;
+  }
+
+  .logo-performance-particle {
+    display: none;
+  }
+
+  .logo-performance-tile::before {
+    opacity: 0.75;
+    filter: none;
+  }
+}
