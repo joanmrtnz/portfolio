@@ -20,7 +20,7 @@ export default function Experience() {
           Experience
         </h2>
 
-        <div className="relative mt-8">
+        <div className="relative mt-8 text-left">
           {experienceData.map((experience, index) => 
                 <ExperienceCard key={index} experience={experience}/>
           )}
