@@ -25,7 +25,7 @@ export default function ProjectCard({ project }) {
         isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
       }`}
     >
-      <div className="w-full rounded-xl p-4 sm:p-4 shadow-lg group">
+      <div className="w-full rounded-xl p-4 sm:p-4">
         <div
           className={`mx-auto grid gap-[30px] md:gap-[50px] mt-3 ${
             isRight ? "grid-cols-1 md:grid-cols-[3fr_2fr]" : "grid-cols-1 md:grid-cols-[2fr_3fr]"

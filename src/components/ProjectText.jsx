@@ -1,4 +1,3 @@
-import ProjectIcon from "./ProjectIcon";
 import { FaGithub } from "react-icons/fa";
 
 export default function ProjectText({ project }) {
@@ -6,9 +5,8 @@ export default function ProjectText({ project }) {
     <div name="project-text" className="self-start flex flex-col">
       <div className="flex flex-wrap-reverse items-center justify-between gap-3">
 
-        <h2 className="flex items-center text-right text-lg sm:text-2xl font-bold text-[var(--text-color)] transition-opacity duration-700">
+        <h2 className="flex items-center text-right text-lg sm:text-2xl font-bold text-[var(--text-color)] transition-opacity duration-700 hover:underline focus-visible:underline focus:outline-none">
           <a href={project.url} target="_blank" rel="noopener noreferrer">{project.name}</a>
-          <ProjectIcon />
         </h2>
 
         <a
