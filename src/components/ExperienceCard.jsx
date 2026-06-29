@@ -19,11 +19,11 @@ export default function ExperienceCard({ experience }) {
                     </p>
                 </div>
 
-                <a href="#home" className="shrink-0">
+                <a href="#home" className="flex h-16 w-16 shrink-0 overflow-hidden rounded-2xl sm:h-20 sm:w-20 md:h-24 md:w-24">
                     <img
                         src={experience.imagePath}
                         alt={`${experience.company} logo`}
-                        className="w-16 sm:w-20 md:w-24 max-h-20 rounded-lg opacity-80 object-contain transition-all duration-300"
+                        className="h-full w-full opacity-80 object-cover transition-all duration-300"
                     />
                 </a>
             </div>
