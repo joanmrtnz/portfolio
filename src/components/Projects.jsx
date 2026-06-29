@@ -14,14 +14,12 @@ export default function Projects() {
     >
       <div className="section-readable w-full max-w-[980px] text-center p-6 sm:p-8 md:p-10">
         <h2
-          className={`font-mono ml-4 sm:ml-8 mb-7 text-left text-3xl sm:text-4xl font-bold text-[var(--green)] transition-opacity duration-700 delay-200 ${
-            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
-          }`}
+          className={`font-mono text-left text-3xl sm:text-4xl font-bold text-[var(--green)] transition-opacity duration-700 delay-100 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}
         >
           Projects
         </h2>
 
-        <div className="ml-1 sm:ml-3 text-md text-[var(--slate)] grid gap-x-3 gap-y-5 p-0 sm:p-4 pl-3 sm:pl-5 mt-6">
+        <div className="mx-0 text-md text-[var(--slate)] grid gap-y-14 sm:gap-y-20 p-0 mt-6">
           {projectsData.map((project, index) => 
             project.name === "Coming soon" ? (
               <VoidProjectCard key={index} project={project}/>
