@@ -9,7 +9,7 @@ export default function Experience() {
       id="experience"
       className="min-h-screen lg:min-h-[80vh] flex items-center justify-center px-4 sm:px-8 md:px-12 lg:px-20 xl:px-32"
     >
-      <div className="max-w-[650px] md:max-w-screen-md w-full text-center p-6">
+      <div className="section-readable max-w-[650px] md:max-w-screen-md w-full text-center p-6">
 
         <h2
           className={`font-mono text-left text-3xl sm:text-4xl font-bold text-[var(--green)] transition-opacity duration-700 delay-100 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}

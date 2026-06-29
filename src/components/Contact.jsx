@@ -10,7 +10,7 @@ export default function Contact() {
       className="min-h-[80vh] flex flex-col items-center justify-center text-center px-4 sm:px-10 md:px-12 lg:px-20 xl:px-32"
     >
       <div
-        className={`group border border-[var(--green)] w-full max-w-[530px] md:max-w-screen-sm px-4 sm:px-7 py-6 rounded-lg transition-all duration-300 hover:shadow-[0_0_20px_5px_var(--green)] 
+        className={`section-readable group border border-[var(--green)] w-full max-w-[530px] md:max-w-screen-sm px-4 sm:px-7 py-6 rounded-lg transition-all duration-300 hover:shadow-[0_0_20px_5px_var(--green)] 
         ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}
       >
         <h2

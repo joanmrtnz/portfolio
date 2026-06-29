@@ -11,7 +11,7 @@ export default function About() {
     >
 
 
-      <div className="max-w-[700px] md:max-w-screen-md w-full text-center p-10">
+      <div className="section-readable max-w-[700px] md:max-w-screen-md w-full text-center p-10">
 
         <div className="text-left flex flex-col">
           <h2 className={`font-mono mb-6 text-left text-3xl sm:text-4xl font-bold text-[var(--green)] transition-opacity duration-700 delay-200 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
