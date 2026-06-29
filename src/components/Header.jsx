@@ -43,7 +43,7 @@ export default function Header() {
           <img
             src={darkMode ? "/page-logo-dark.png" : "/page-logo-light.png"}
             alt="website logo"
-            className="w-20 h-20 md:w-16 md:h-16 object-contain transition-all duration-300"
+            className="w-20 h-20 md:w-18 md:h-18 object-contain transition-all duration-300"
           />
         </a>
 
@@ -59,13 +59,7 @@ export default function Header() {
           <li><a href="#experience" className="text-[var(--lightest-slate)] hover:text-[var(--green)] hover:underline focus-visible:underline focus:outline-none px-5 py-2.5">Experience</a></li>
           <li><a href="#projects" className="text-[var(--lightest-slate)] hover:text-[var(--green)] hover:underline focus-visible:underline focus:outline-none px-5 py-2.5">Projects</a></li>
           <li><a href="#contact" className="text-[var(--lightest-slate)] hover:text-[var(--green)] hover:underline focus-visible:underline focus:outline-none px-5 py-2.5">Contact</a></li>
-          <a
-           href="/joan_martinez_CV.pdf"
-            className="text-[var(--green)] bg-[var(--navy)]
-            hover:underline focus-visible:underline focus:outline-none
-            rounded-lg text-xs md:text-base px-5 py-3">
-            Resume
-          </a>
+          <li><a href="/joan_martinez_CV.pdf" className="text-[var(--green)] hover:underline focus-visible:underline focus:outline-none px-5 py-2.5">Resume</a></li>
         </ul>
 
         <button
