@@ -24,9 +24,7 @@ export default function Hero() {
         <div className="mb-2 transition-all opacity-0 animate-fade-in-up delay-550">  
           <a
             href="#projects"
-            className="text-[var(--green)] border border-[var(--green)] 
-              hover:shadow-[0_0_15px_var(--green)] hover:bg-[var(--green)] hover:text-[var(--navy)]
-              font-medium rounded-lg text-sm md:text-base px-5 py-3"
+            className="text-[var(--green)] border border-[var(--green)] px-5 py-3 rounded-lg font-medium underline-offset-4 transition-all duration-300 hover:underline focus-visible:underline focus:outline-none"
           >
             See all my works.
           </a>
