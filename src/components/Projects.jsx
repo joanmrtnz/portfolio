@@ -21,7 +21,7 @@ export default function Projects() {
 
         <div className="mx-0 text-md text-[var(--slate)] grid gap-y-14 sm:gap-y-20 p-0 mt-6">
           {projectsData.map((project, index) => 
-            project.name === "Coming soon" ? (
+            project.name?.includes("Coming soon") ? (
               <VoidProjectCard key={index} project={project}/>
             ) : (
               <ProjectCard key={index} project={project}/>
