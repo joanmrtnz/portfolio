@@ -7,7 +7,7 @@ export default function About() {
     <section
       ref={ref}
       id="about"
-      className="min-h-screen lg:min-h-[80vh] flex items-center justify-center px-4 sm:px-8 md:px-12 lg:px-20 xl:px-32"
+      className="flex items-center justify-center px-4 sm:px-8 md:px-12 lg:px-20 xl:px-32"
     >
 
 

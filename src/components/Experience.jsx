@@ -10,7 +10,7 @@ export default function Experience() {
     <section
       ref={ref}
       id="experience"
-      className="min-h-screen lg:min-h-[80vh] flex items-center justify-center px-4 sm:px-8 md:px-12 lg:px-20 xl:px-32"
+      className="flex items-center justify-center px-4 sm:px-8 md:px-12 lg:px-20 xl:px-32"
     >
       <div className="section-readable w-full max-w-[980px] text-center p-6 sm:p-8 md:p-10">
 

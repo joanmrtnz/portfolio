@@ -12,7 +12,7 @@ export default function App() {
     <div className="relative min-h-screen overflow-x-clip bg-[var(--navy)]">
       <LogoPerformance />
       <Header />
-      <main className="relative z-10 px-6 sm:px-12 md:px-24 lg:px-32 xl:px-[150px]">
+      <main className="relative z-10 flex flex-col gap-[110px] lg:gap-[160px] px-6 sm:px-12 md:px-24 lg:px-32 xl:px-[150px]">
         <Hero />
         <About />
         <Experience />

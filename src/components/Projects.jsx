@@ -10,7 +10,7 @@ export default function Projects() {
     <section
       ref={ref}
       id="projects"
-      className="mt-[100px] min-h-screen flex items-center justify-center px-4 sm:px-6"
+      className="flex items-center justify-center px-4 sm:px-6"
     >
       <div className="section-readable w-full max-w-[980px] text-center p-6 sm:p-8 md:p-10">
         <h2

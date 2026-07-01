@@ -120,7 +120,6 @@ strong {
   border-radius: 10px;
   box-shadow: 0 24px 80px var(--section-shadow);
   backdrop-filter: blur(2px);
-  margin-bottom: 2rem;
 }
 
 .hero-readable {
