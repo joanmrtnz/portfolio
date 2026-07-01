@@ -1,19 +1,20 @@
 [
     {
-        "gitUrl": "https://github.com/joanmrtnz/chillspace",
-        "url": "https://chillspace.app",
+        "gitUrl": "https://github.com/joanmrtnz/welmio",
+        "url": "https://app.welmio.dev",
         "orientation": "right",
-        "name": "Chill Space",
-        "description": "Website featuring mood-based playlists via the Spotify API, relaxing animations, and wellness products for purchase. Built with Next.js (React) and Tailwind CSS.",
-        "imagePath": "/chillspace.png",
+        "name": "Welmio",
+        "description": "Welmio is a personal finance app designed to help you understand and organize your money in a simple, visual way. Track your financial activity, follow your goals, and review your progress from a clean and focused interface. Welmio helps you build better money habits by keeping your personal finances easy to access and easier to understand. Whether you are reviewing your spending, checking your progress, or planning your next financial goal, Welmio gives you a simple space to stay in control.",
+        "imagePath": "/welmio.png",
         "technologies": [
-            "Next.js",
-            "Spotify API",
-            "Tailwind",
-            "Animations"
+            "Nest.js",
+            "Expo + React Native",
+            "Prisma + PostgreSQL",
+            "JWT",
+            "Turborepo + pnpm"
         ]
     },
     {
-        "name": "Coming soon"
+        "name": "Coming soon..."
     }
 ]
