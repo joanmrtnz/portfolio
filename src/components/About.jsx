@@ -18,7 +18,7 @@ export default function About() {
             }`}>
             About me
           </h2>
-          <p className={`mt-4 mb-7 text-lg text-[var(--light-slate)] transition-opacity duration-700 delay-400 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}>
+          <p className={`mt-0 sm:mt-4 mb-7 text-lg text-[var(--light-slate)] transition-opacity duration-700 delay-400 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}>
             I&apos;m a <strong>Full-stack Product Engineer</strong> who builds complete digital products across <strong>web</strong>, <strong>mobile</strong>, <strong>backend</strong>, and <strong>deployment</strong>. I like working close to the product: understanding the problem, shaping the solution, communicating tradeoffs, and shipping reliable software that people can actually use.
           </p>
 
