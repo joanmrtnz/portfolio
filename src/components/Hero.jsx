@@ -17,7 +17,7 @@ export default function Hero() {
           I turn ideas into shipped products.
         </h1>
 
-        <p className="font-mono text-base md:text-lg mt-2 text-[var(--slate)] mb-9 md:mb-12 opacity-0 animate-fade-in-up delay-500">
+        <p className="font-mono text-base md:text-lg mt-3 text-[var(--slate)] mb-9 md:mb-12 opacity-0 animate-fade-in-up delay-500">
           Full-stack Product Engineer focused on web, mobile, backend, infrastructure, and clear product delivery.
         </p>
 

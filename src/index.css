@@ -23,10 +23,13 @@
   --green: #64ffda;
   --light-green: #b0fae8;
   --green-tint: rgba(100, 255, 218, 0.1);
+  --tech-pill-surface: rgba(100, 255, 218, 0.1);
+  --tech-list-color: var(--green);
+  --experience-logo-border: transparent;
   --blue: #67b0ff; 
-  --section-surface: rgba(10, 25, 47, 0.72);
-  --section-surface-soft: rgba(10, 25, 47, 0.46);
-  --section-outline: rgba(204, 214, 246, 0.08);
+  --section-surface: rgba(10, 25, 47, 0.8);
+  --section-surface-soft: rgba(10, 25, 47, 0.56);
+  --section-outline: rgba(73, 86, 112, 0.42);
   --section-shadow: rgba(2, 12, 27, 0.28);
 }
 
@@ -47,11 +50,14 @@
   --green: #3cb371;
   --light-green: #81c784;
   --green-tint: rgba(60, 179, 113, 0.1);
+  --tech-pill-surface: rgba(60, 179, 113, 0.18);
+  --tech-list-color: #247a4e;
+  --experience-logo-border: rgba(46, 46, 46, 0.18);
   --pink: #d17bb5;
   --blue: #5a9bd4;
-  --section-surface: rgba(255, 255, 255, 0.72);
-  --section-surface-soft: rgba(255, 255, 255, 0.48);
-  --section-outline: rgba(46, 46, 46, 0.08);
+  --section-surface: rgba(255, 255, 255, 0.84);
+  --section-surface-soft: rgba(255, 255, 255, 0.64);
+  --section-outline: rgba(46, 46, 46, 0.26);
   --section-shadow: rgba(200, 200, 200, 0.16);
 }
 
@@ -74,9 +80,12 @@
 --green: #39ff90;
 --light-green: #a2ffc9;
 --green-tint: rgba(57, 255, 144, 0.1);
---section-surface: rgba(12, 17, 26, 0.78);
---section-surface-soft: rgba(12, 17, 26, 0.58);
---section-outline: rgba(240, 245, 255, 0.09);
+--tech-pill-surface: rgba(57, 255, 144, 0.1);
+--tech-list-color: var(--green);
+--experience-logo-border: transparent;
+--section-surface: rgba(12, 17, 26, 0.84);
+--section-surface-soft: rgba(12, 17, 26, 0.68);
+--section-outline: rgba(57, 255, 144, 0.24);
 --section-shadow: rgba(0, 0, 0, 0.34);
 }
 
