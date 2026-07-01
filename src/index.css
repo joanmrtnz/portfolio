@@ -103,6 +103,10 @@ body,
   min-height: 100%;
 }
 
+html {
+  scroll-padding-top: 100px;
+}
+
 html,
 body {
   overflow-x: clip;
