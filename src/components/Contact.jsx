@@ -24,8 +24,7 @@ export default function Contact() {
           className={`text-md sm:text-lg text-[var(--light-slate)] mt-[20px] sm:mt-[30px] mb-6 sm:mb-8 lg:max-w-[720px] lg:mx-auto transition-opacity duration-700
           ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}
         >
-          I’m currently looking for new opportunities to grow as a web developer. I’m eager to learn, collaborate, and contribute to exciting projects.
-          If you think I’d be a good fit or just want to connect, feel free to reach out—I’d love to chat!
+          I’m looking for Product Engineer or Full-stack Product Engineer opportunities where I can help turn ideas into shipped products. I’m especially interested in teams that value communication, ownership, product thinking, and strong technical execution across frontend, backend, mobile, and infrastructure.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 mt-[30px] sm:mt-[50px] mb-2 items-center justify-center">

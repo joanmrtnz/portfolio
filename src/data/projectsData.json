@@ -4,14 +4,20 @@
         "url": "https://app.welmio.dev",
         "orientation": "right",
         "name": "Welmio",
-        "description": "Welmio is a personal finance app designed to help you understand and organize your money in a simple, visual way. Track your financial activity, follow your goals, and review your progress from a clean and focused interface. Welmio helps you build better money habits by keeping your personal finances easy to access and easier to understand. Whether you are reviewing your spending, checking your progress, or planning your next financial goal, Welmio gives you a simple space to stay in control.",
+        "description": "Welmio is a cross-platform personal finance product built for iOS, Android, and web. I designed and developed the app, backend, database layer, authentication flow, self-hosted deployment, and product website inside a Turborepo. The project demonstrates end-to-end product ownership: mobile UI, browser experience, API architecture, infrastructure, and launch-ready presentation.",
         "imagePath": "/welmio.png",
         "technologies": [
-            "Nest.js",
-            "Expo + React Native",
-            "Prisma + PostgreSQL",
+            "Expo",
+            "React Native",
+            "Next.js",
+            "NestJS",
+            "PostgreSQL",
+            "Prisma",
+            "Docker",
+            "Caddy",
+            "Turborepo",
             "JWT",
-            "Turborepo + pnpm"
+            "pnpm"
         ]
     },
     {

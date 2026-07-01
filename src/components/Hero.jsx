@@ -14,11 +14,11 @@ export default function Hero() {
         </h1>
 
         <h1 className="text-3xl md:text-6xl text-[var(--slate)] font-bold mb-2 md:mb-3 opacity-0 animate-fade-in-up delay-300">
-          I create digital solutions for a constantly evolving world.
+          I turn ideas into shipped products.
         </h1>
 
         <p className="font-mono text-base md:text-lg mt-2 text-[var(--slate)] mb-9 md:mb-12 opacity-0 animate-fade-in-up delay-500">
-        Modern Web Developer
+          Full-stack Product Engineer focused on web, mobile, backend, infrastructure, and clear product delivery.
         </p>
 
         <div className="mb-2 transition-all opacity-0 animate-fade-in-up delay-550">  
@@ -26,7 +26,7 @@ export default function Hero() {
             href="#projects"
             className="text-[var(--green)] border border-[var(--green)] px-5 py-3 rounded-lg font-medium underline-offset-4 transition-all duration-300 hover:underline focus-visible:underline focus:outline-none"
           >
-            See all my works.
+            View product work.
           </a>
         </div>
       </div>
