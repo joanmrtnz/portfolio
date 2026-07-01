@@ -39,12 +39,12 @@ export default function Header() {
     <header className="font-mono font-medium bg-[var(--navy)] bg-opacity-90 sm:backdrop-blur-lg sm:bg-[var(--navy)]/70 fixed top-0 w-full z-50 px-6 md:px-[50px] shadow-sm">
       <nav className="h-[80px] w-full flex items-center justify-between  font-semibold text-s/7">
 
-        <a href="#home">
-          <img
-            src={darkMode ? "/page-logo-dark.png" : "/page-logo-light.png"}
-            alt="website logo"
-            className="w-20 h-20 md:w-18 md:h-18 object-contain transition-all duration-300"
-          />
+        <a
+          href="#home"
+          aria-label="Go to home"
+          className="flex w-20 h-20 md:w-18 md:h-18 items-center font-mono tracking-tighter text-xl font-black text-[var(--green)] transition-colors duration-300 hover:text-[var(--light-green)]"
+        >
+          mrtnz_
         </a>
 
         <ul className="hidden md:flex items-center space-x-4 ml-auto">
