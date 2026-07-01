@@ -58,8 +58,7 @@ export default function Header() {
           <li><a href="#about" className="text-[var(--lightest-slate)] hover:text-[var(--green)] hover:underline focus-visible:underline focus:outline-none px-5 py-2.5">About</a></li>
           <li><a href="#experience" className="text-[var(--lightest-slate)] hover:text-[var(--green)] hover:underline focus-visible:underline focus:outline-none px-5 py-2.5">Experience</a></li>
           <li><a href="#projects" className="text-[var(--lightest-slate)] hover:text-[var(--green)] hover:underline focus-visible:underline focus:outline-none px-5 py-2.5">Projects</a></li>
-          <li><a href="#contact" className="text-[var(--lightest-slate)] hover:text-[var(--green)] hover:underline focus-visible:underline focus:outline-none px-5 py-2.5">Contact</a></li>
-          <li><a href="/joan_martinez_CV.pdf" className="text-[var(--green)] hover:underline focus-visible:underline focus:outline-none px-5 py-2.5">Resume</a></li>
+          <li><a href="#contact" className="text-[var(--green)] hover:underline focus-visible:underline focus:outline-none px-5 py-2.5">Contact</a></li>
         </ul>
 
         <button
@@ -93,13 +92,7 @@ export default function Header() {
           <a href="#about" onClick={() => setMenuOpen(false)} className="mr-4 border-b border-dashed text-[var(--lightest-slate)] hover:text-[var(--green)]">About</a>
           <a href="#experience" onClick={() => setMenuOpen(false)} className="mr-4 border-b border-dashed text-[var(--lightest-slate)] hover:text-[var(--green)]">Experience</a>
           <a href="#projects" onClick={() => setMenuOpen(false)} className="mr-4 border-b border-dashed text-[var(--lightest-slate)] hover:text-[var(--green)]">Projects</a>
-          <a href="#contact" onClick={() => setMenuOpen(false)} className="mr-4 border-b border-dashed text-[var(--lightest-slate)] hover:text-[var(--green)]">Contact</a>
-         <a
-           href="/joan_martinez_CV.pdf"
-            type="button"
-            onClick={() => setMenuOpen(false)}
-            className="mr-4 border-b border-dashed text-[var(--green)] bg-[var(--navy)]"
-          >Resume</a>
+          <a href="#contact" onClick={() => setMenuOpen(false)} className="mr-4 border-b border-dashed text-[var(--green)] bg-[var(--navy)]">Contact</a>``
         </div>
       </nav>
     </header>
