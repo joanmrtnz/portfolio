@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 
 
 export default function VoidProjectCard({ project }) {
-  const { ref, isVisible } = useScrollAnimation(0.7);
+  const { ref, isVisible } = useScrollAnimation(0.5);
   const [isMobile, setIsMobile] = useState(false);
 
 

@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 
 
 export default function ProjectCard({ project }) {
-  const { ref, isVisible } = useScrollAnimation(0.7);
+  const { ref, isVisible } = useScrollAnimation(0.5);
   const isRight = project.orientation === "right";
   const [isMobile, setIsMobile] = useState(false);
 

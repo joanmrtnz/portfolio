@@ -21,7 +21,7 @@ export default function Contact() {
         </h2>
 
         <p
-          className={`text-md sm:text-lg text-[var(--light-slate)] mt-[20px] sm:mt-[30px] mb-6 sm:mb-8 transition-opacity duration-700 delay-200 
+          className={`text-md sm:text-lg text-[var(--light-slate)] mt-[20px] sm:mt-[30px] mb-6 sm:mb-8 transition-opacity duration-700
           ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}
         >
           I’m currently looking for new opportunities to grow as a web developer. I’m eager to learn, collaborate, and contribute to exciting projects.

@@ -4,7 +4,7 @@ import experienceData from "../data/experienceData.json";
 
 
 export default function Experience() {
-  const { ref, isVisible } = useScrollAnimation(0.5);
+  const { ref, isVisible } = useScrollAnimation(0.3);
 
   return (
     <section
