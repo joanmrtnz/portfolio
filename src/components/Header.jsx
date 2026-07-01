@@ -92,7 +92,7 @@ export default function Header() {
           <a href="#about" onClick={() => setMenuOpen(false)} className="mr-4 border-b border-dashed text-[var(--lightest-slate)] hover:text-[var(--green)]">About</a>
           <a href="#experience" onClick={() => setMenuOpen(false)} className="mr-4 border-b border-dashed text-[var(--lightest-slate)] hover:text-[var(--green)]">Experience</a>
           <a href="#projects" onClick={() => setMenuOpen(false)} className="mr-4 border-b border-dashed text-[var(--lightest-slate)] hover:text-[var(--green)]">Projects</a>
-          <a href="#contact" onClick={() => setMenuOpen(false)} className="mr-4 border-b border-dashed text-[var(--green)] bg-[var(--navy)]">Contact</a>``
+          <a href="#contact" onClick={() => setMenuOpen(false)} className="mr-4 border-b border-dashed text-[var(--green)] bg-[var(--navy)]">Contact</a>
         </div>
       </nav>
     </header>
