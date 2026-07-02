@@ -5,20 +5,20 @@ export default function Hero() {
       className="relative z-10 pt-40 md:pt-34 flex flex-col items-center justify-center text-left px-0 m-auto"
     >
       <div className="hero-readable w-full max-w-[980px] p-6 sm:p-8 md:p-10">
-        <p className="font-mono text-lg md:text-xl text-[var(--green)] mb-3 md:mb-5 opacity-0 animate-fade-in-up delay-100">
+        <p className="font-mono text-lg md:text-xl text-[var(--green)] mb-2 md:mb-5 opacity-0 animate-fade-in-up delay-100">
           Hello, I&apos;m
         </p>
 
-        <h1 className="text-4xl md:text-7xl text-[var(--lightest-slate)] font-bold mb-3 md:mb-5 opacity-0 animate-fade-in-up delay-200">
+        <h1 className="text-4xl md:text-7xl text-[var(--lightest-slate)] font-bold mb-5 md:mb-7 opacity-0 animate-fade-in-up delay-200">
           Joan Martinez.
         </h1>
 
-        <h1 className="text-3xl md:text-6xl text-[var(--light-slate)] font-bold mb-2 md:mb-3 opacity-0 animate-fade-in-up delay-300">
-            I turn ideas into{" "}
-            <span className="shippedHighlight">shipped products</span>.
+        <h1 className="leading-[1.15] tracking-tight text-[1.6rem] md:text-4xl text-[var(--slate)] md:font-bold opacity-0 animate-fade-in-up delay-300">
+            I turn ideas into <br />
+            <span className="text-[1.7rem] md:text-4xl text-[var(--mid-green)]">&gt; shipped products</span>
         </h1>
 
-        <p className="font-mono text-base md:text-lg mt-3 text-[var(--slate)] mb-9 md:mb-12 opacity-0 animate-fade-in-up delay-500">
+        <p className="font-mono text-base md:text-lg mt-5 text-[var(--slate)] mb-9 md:mb-12 opacity-0 animate-fade-in-up delay-500">
           Full-stack Product Engineer focused on web, mobile, backend, infrastructure, and clear product delivery.
         </p>
 
