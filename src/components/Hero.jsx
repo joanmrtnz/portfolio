@@ -13,8 +13,9 @@ export default function Hero() {
           Joan Martinez.
         </h1>
 
-        <h1 className="text-3xl md:text-6xl text-[var(--slate)] font-bold mb-2 md:mb-3 opacity-0 animate-fade-in-up delay-300">
-          I turn ideas into shipped products.
+        <h1 className="text-3xl md:text-6xl text-[var(--light-slate)] font-bold mb-2 md:mb-3 opacity-0 animate-fade-in-up delay-300">
+            I turn ideas into{" "}
+            <span className="shippedHighlight">shipped products</span>.
         </h1>
 
         <p className="font-mono text-base md:text-lg mt-3 text-[var(--slate)] mb-9 md:mb-12 opacity-0 animate-fade-in-up delay-500">
