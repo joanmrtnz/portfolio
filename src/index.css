@@ -8,29 +8,32 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  --background-color: #242424;
-  --text-color: rgba(255, 255, 255, 0.87);
-  --navy: #0a192f;
-  --light-navy: #112240;
-  --lightest-navy: #233554;
-  --navy-shadow: rgba(2, 12, 27, 0.7);
-  --dark-slate: #495670;
-  --slate: #8892b0;
-  --light-slate: #a8b2d1;
-  --lightest-slate: #ccd6f6;
-  --white: #e6f1ff;
-  --green: #64ffda;
-  --mid-green: #39ff9099;
-  --light-green: #b0fae8;
-  --green-tint: rgba(100, 255, 218, 0.1);
-  --tech-pill-surface: rgba(100, 255, 218, 0.1);
+  --background-color: #1e1e1e;
+  --text-color: rgba(255, 255, 255, 0.93);
+
+  --navy: #10151f;
+  --light-navy: #1b2433;
+  --lightest-navy: #263247;
+  --navy-shadow: rgba(4, 8, 15, 0.72);
+
+  --dark-slate: #657286;
+  --mid-slate: #8995a9;
+  --slate: #adb8cc;
+  --light-slate: #d0d8e8;
+  --lightest-slate: #f0f5ff;
+
+  --white: #f9f9fb;
+  --green: #39ff90;
+  --mid-green: rgba(57, 255, 144, 0.6);
+  --light-green: #a2ffc9;
+  --green-tint: rgba(57, 255, 144, 0.1);
+  --tech-pill-surface: rgba(57, 255, 144, 0.1);
   --tech-list-color: var(--green);
   --experience-logo-border: transparent;
-  --blue: #67b0ff;
-  --section-surface: rgba(10, 25, 47, 0.8);
-  --section-surface-soft: rgba(10, 25, 47, 0.56);
-  --section-outline: rgba(73, 86, 112, 0.42);
-  --section-shadow: rgba(2, 12, 27, 0.28);
+  --section-surface: rgba(12, 17, 26, 0.84);
+  --section-surface-soft: rgba(12, 17, 26, 0.68);
+  --section-outline: rgba(57, 255, 144, 0.24);
+  --section-shadow: rgba(0, 0, 0, 0.34);
 }
 
 .light {
@@ -54,8 +57,6 @@
   --tech-pill-surface: rgba(60, 179, 113, 0.18);
   --tech-list-color: #247a4e;
   --experience-logo-border: rgba(46, 46, 46, 0.18);
-  --pink: #d17bb5;
-  --blue: #5a9bd4;
   --section-surface: rgba(255, 255, 255, 0.84);
   --section-surface-soft: rgba(255, 255, 255, 0.64);
   --section-outline: rgba(46, 46, 46, 0.26);
@@ -78,8 +79,6 @@
   --lightest-slate: #f0f5ff;
 
   --white: #f9f9fb;
-  --blue: #e6f1ff;
-
   --green: #39ff90;
   --mid-green: rgba(57, 255, 144, 0.6);
   --light-green: #a2ffc9;

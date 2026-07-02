@@ -29,12 +29,6 @@ export default function Header() {
     localStorage.setItem("darkMode", darkMode);
   }, [darkMode]);
 
-  useEffect(() => {
-    localStorage.setItem("darkMode", true);
-  }, []);
-
-
-
   return (
     <header className="font-mono font-medium bg-[var(--navy)] bg-opacity-90 sm:backdrop-blur-lg sm:bg-[var(--navy)]/70 fixed top-0 w-full z-50 px-6 md:px-[50px] shadow-sm">
       <nav className="h-[80px] w-full flex items-center justify-between  font-semibold text-s/7">
