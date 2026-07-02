@@ -7,7 +7,7 @@ export default function Contact() {
     <section
       ref={ref}
       id="contact"
-      className="flex flex-col items-center justify-center text-center px-4 sm:px-8 md:px-12 lg:px-20 xl:px-32"
+      className="flex w-full flex-col items-center justify-center text-center px-0 m-auto"
     >
       <div
         className={`section-readable group border border-[var(--green)] w-full max-w-[980px] min-h-[360px] sm:min-h-[420px] md:min-h-[480px] p-6 sm:p-8 md:p-10 flex flex-col justify-center transition-all duration-300 hover:shadow-[0_0_20px_5px_var(--green)] 
