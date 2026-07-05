@@ -18,8 +18,8 @@
 
   --dark-slate: #657286;
   --mid-slate: #8995a9;
-  --slate: #adb8cc;
-  --light-slate: #d0d8e8;
+  --slate: #c1cada;
+  --light-slate: #dde5f2;
   --lightest-slate: #f0f5ff;
 
   --white: #f9f9fb;
@@ -30,37 +30,37 @@
   --tech-pill-surface: rgba(57, 255, 144, 0.1);
   --tech-list-color: var(--green);
   --experience-logo-border: transparent;
-  --section-surface: rgba(12, 17, 26, 0.84);
-  --section-surface-soft: rgba(12, 17, 26, 0.68);
+  --section-surface: rgba(14, 20, 30, 0.9);
+  --section-surface-soft: rgba(14, 20, 30, 0.78);
   --section-outline: rgba(57, 255, 144, 0.24);
   --section-shadow: rgba(0, 0, 0, 0.34);
 }
 
 .light {
-  --background-color: #ffffff;
-  --text-color: #213547;
-  --dark-navy: #eaeaea;
-  --navy: #f5f5f5;
-  --light-navy: #ffffff;
-  --lightest-navy: #fafafa;
-  --navy-shadow: rgba(200, 200, 200, 0.7);
-  --dark-slate: #2e2e2e;
-  --mid-slate: #909090;
-  --slate: #3c3c3c;
-  --light-slate: #595959;
-  --lightest-slate: #6e6e6e;
-  --white: #1a1a1a;
-  --green: #3cb371;
-  --mid-green: #3cb371;
-  --light-green: #81c784;
-  --green-tint: rgba(60, 179, 113, 0.1);
-  --tech-pill-surface: rgba(60, 179, 113, 0.18);
-  --tech-list-color: #247a4e;
-  --experience-logo-border: rgba(46, 46, 46, 0.18);
-  --section-surface: rgba(255, 255, 255, 0.84);
-  --section-surface-soft: rgba(255, 255, 255, 0.64);
-  --section-outline: rgba(46, 46, 46, 0.26);
-  --section-shadow: rgba(200, 200, 200, 0.16);
+  --background-color: #d8dde5;
+  --text-color: #19232f;
+  --dark-navy: #bac3cf;
+  --navy: #d2d8e1;
+  --light-navy: #e0e5eb;
+  --lightest-navy: #e8ecf1;
+  --navy-shadow: rgba(47, 61, 78, 0.22);
+  --dark-slate: #263241;
+  --mid-slate: #3d4b5d;
+  --slate: #2f3c4c;
+  --light-slate: #263241;
+  --lightest-slate: #1b2633;
+  --white: #16202c;
+  --green: #0b6b43;
+  --mid-green: #2f7d57;
+  --light-green: #064c32;
+  --green-tint: rgba(11, 107, 67, 0.12);
+  --tech-pill-surface: rgba(11, 107, 67, 0.14);
+  --tech-list-color: #075535;
+  --experience-logo-border: rgba(25, 35, 47, 0.22);
+  --section-surface: rgba(226, 231, 237, 0.9);
+  --section-surface-soft: rgba(203, 211, 222, 0.74);
+  --section-outline: rgba(25, 35, 47, 0.18);
+  --section-shadow: rgba(47, 61, 78, 0.16);
 }
 
 .dark {
@@ -74,8 +74,8 @@
 
   --dark-slate: #657286;
   --mid-slate: #8995a9;
-  --slate: #adb8cc;
-  --light-slate: #d0d8e8;
+  --slate: #c1cada;
+  --light-slate: #dde5f2;
   --lightest-slate: #f0f5ff;
 
   --white: #f9f9fb;
@@ -86,8 +86,8 @@
   --tech-pill-surface: rgba(57, 255, 144, 0.1);
   --tech-list-color: var(--green);
   --experience-logo-border: transparent;
-  --section-surface: rgba(12, 17, 26, 0.84);
-  --section-surface-soft: rgba(12, 17, 26, 0.68);
+  --section-surface: rgba(14, 20, 30, 0.9);
+  --section-surface-soft: rgba(14, 20, 30, 0.78);
   --section-outline: rgba(57, 255, 144, 0.24);
   --section-shadow: rgba(0, 0, 0, 0.34);
 }

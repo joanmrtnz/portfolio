@@ -30,7 +30,7 @@ export default function Header() {
   }, [darkMode]);
 
   return (
-    <header className="font-mono font-medium bg-[var(--navy)] bg-opacity-90 sm:backdrop-blur-lg sm:bg-[var(--navy)]/70 fixed top-0 w-full z-50 px-6 md:px-[50px] shadow-sm">
+    <header className="font-mono font-medium bg-[var(--navy)] bg-opacity-90 sm:backdrop-blur-lg sm:bg-[var(--navy)]/70 fixed top-0 w-full z-50 px-6 md:px-[50px] border-b border-[var(--section-outline)]/80">
       <nav className="h-[80px] w-full flex items-center justify-between  font-semibold text-s/7">
 
         <a
