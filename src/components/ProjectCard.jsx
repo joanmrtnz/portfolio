@@ -21,7 +21,7 @@ export default function ProjectCard({ project }) {
   return (
     <div
       ref={ref}
-      className={`w-full text-left relative  border-b border-[var(--section-outline)] transition-all duration-700 ease-in-out transform ${
+      className={`w-full text-left relative pb-10 border-b border-[var(--section-outline)] transition-all duration-700 ease-in-out transform ${
         isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
       }`}
     >
