@@ -35,7 +35,7 @@ export default function About() {
           </p>
 
           <div className="font-mono sm:max-w-[250px] mx-auto md:max-w-none md:mx-0">
-            <ol className={`list-disc text-base sm:text-lg text-[var(--tech-list-color)] grid grid-cols-2 gap-x-6 gap-y-3 pl-6 mt-5 transition-opacity duration-700 delay-800 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}>
+            <ol className={`list-disc text-sm sm:text-lg text-[var(--tech-list-color)] grid grid-cols-2 gap-x-6 gap-y-3 pl-6 mt-5 transition-opacity duration-700 delay-800 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}>
               <li>TypeScript</li>
               <li>Angular</li>
               <li>Symfony</li>
