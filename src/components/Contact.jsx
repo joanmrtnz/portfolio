@@ -24,7 +24,7 @@ export default function Contact() {
           className={`text-md sm:text-lg text-[var(--light-slate)] mt-[20px] sm:mt-[30px] mb-6 sm:mb-8 lg:max-w-[720px] lg:mx-auto transition-opacity duration-700
           ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}
         >
-          I’m looking for Product Engineer or Full-stack Product Engineer opportunities where I can help turn ideas into shipped products. I’m especially interested in teams that value communication, ownership, product thinking, and strong technical execution across frontend, backend, mobile, and infrastructure.
+          I’m looking for <strong>Product Engineer</strong> or <strong>Full-stack Product Engineer</strong> opportunities where I can help turn ideas into <strong>shipped products</strong>. I’m especially interested in teams that value <strong>communication</strong>, <strong>ownership</strong>, <strong>product thinking</strong>, and <strong>strong technical execution</strong> across frontend, backend, mobile, and infrastructure.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 mt-[30px] sm:mt-[50px] mb-2 items-center justify-center">
