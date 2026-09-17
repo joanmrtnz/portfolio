@@ -1,7 +1,7 @@
 [
     {
         "gitUrl": "https://github.com/joanmrtnz/welmio",
-        "url": "https://app.welmio.dev",
+        "url": "https://welmio.dev",
         "orientation": "right",
         "name": "Welmio",
         "description": "Welmio is a cross-platform personal finance product built for iOS, Android, and web. I designed and developed the app, backend, database layer, authentication flow, self-hosted deployment, and product website inside a Turborepo. The project demonstrates end-to-end product ownership: mobile UI, browser experience, API architecture, infrastructure, and launch-ready presentation.",
