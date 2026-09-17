@@ -16,7 +16,7 @@ export default function Contact() {
         </h2>
 
         <p
-          className="type-body text-[var(--light-slate)] my-[54px] sm:my-[82px] mx-auto"
+          className="type-body text-[var(--light-slate)] my-6 sm:my-[82px] mx-auto"
         >
           I’m looking for <strong>Product Engineer</strong> or <strong>Full-stack Product Engineer</strong> opportunities where I can help turn ideas into <strong>shipped products</strong>. I’m especially interested in teams that value <strong>communication</strong>, <strong>ownership</strong>, <strong>product thinking</strong>, and <strong>strong technical execution</strong> across frontend, backend, mobile, and infrastructure.
         </p>

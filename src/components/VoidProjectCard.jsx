@@ -18,7 +18,7 @@ export default function VoidProjectCard({ project }) {
     <div
       className="w-full mb-0 sm:mb-[80px] m-auto text-center relative">
       <div className="w-full rounded-xl p-4 sm:p-4 group">
-        <div className="mx-auto grid gap-[15px] md:gap-[50px] mt-0 md:mt-3 grid-cols-1 md:grid-cols-[3fr_2fr]">
+        <div className="mx-auto grid gap-0 md:gap-[50px] mt-0 md:mt-3 grid-cols-1 md:grid-cols-[3fr_2fr]">
           {isMobile ? (
             <>
               <div className="w-full mr-1">
@@ -28,7 +28,7 @@ export default function VoidProjectCard({ project }) {
                 <h2 className="min-h-[20px] rounded-xl p-2 type-title flex items-center animate-pulse">
                  {project.name}
                 </h2>
-                <p className="min-h-[96px] type-body text-[var(--slate)] rounded-xl ml-1 backdrop-blur-lg bg-[var(--white)]/8 animate-pulse"></p>
+                <p className="w-full min-h-[96px] rounded-xl backdrop-blur-lg bg-[var(--white)]/8 animate-pulse"></p>
                 <ul className="mt-2 flex flex-wrap text-left">
                   {[...Array(5)].map((_, index) => (
                     <li key={index} className="mr-1.5 mt-2">
