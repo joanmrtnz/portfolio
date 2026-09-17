@@ -148,20 +148,18 @@ strong {
   font-weight: 600;
 }
 
-.section-readable {
-  background:
-    linear-gradient(180deg, var(--section-surface), var(--section-surface-soft));
-  border: 1px solid var(--section-outline);
-  border-radius: 10px;
-  box-shadow: 0 24px 80px var(--section-shadow);
-  backdrop-filter: blur(2px);
-}
-
+.section-readable,
 .hero-readable {
   background:
     linear-gradient(180deg, var(--section-surface), var(--section-surface-soft));
   border: 1px solid var(--section-outline);
   border-radius: 10px;
+}
+
+.section-readable,
+.light .hero-readable {
+  box-shadow: 0 24px 80px var(--section-shadow);
+  backdrop-filter: blur(2px);
 }
 
 /* Shared type roles keep sizing consistent across sections and breakpoints. */
