@@ -1,28 +1,22 @@
-import useScrollAnimation from "../hooks/useScrollAnimation";
 
 export default function Contact() {
-  const { ref, isVisible } = useScrollAnimation(0.5);
 
   return (
     <section
-      ref={ref}
       id="contact"
       className="flex w-full flex-col items-center justify-center text-center px-0 m-auto"
     >
       <div
-        className={`section-readable group border border-[var(--green)] w-full max-w-[980px] min-h-[360px] sm:min-h-[420px] md:min-h-[480px] p-6 sm:p-8 md:p-10 flex flex-col justify-center transition-all duration-300 hover:shadow-[0_0_20px_5px_var(--green)] 
-        ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}
+        className="section-readable group border border-[var(--green)] w-full max-w-[980px] min-h-[360px] sm:min-h-[420px] md:min-h-[480px] p-6 sm:p-8 md:p-10 flex flex-col justify-center transition-all duration-300 hover:shadow-[0_0_20px_5px_var(--green)]"
       >
         <h2
-          className={`text-3xl sm:text-5xl font-bold text-[var(--green)] transition-opacity duration-700 
-          ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}
+          className="text-3xl sm:text-5xl font-bold text-[var(--green)]"
         >
           Let&apos;s Connect_
         </h2>
 
         <p
-          className={`text-md sm:text-lg text-[var(--light-slate)] mt-[20px] sm:mt-[30px] mb-6 sm:mb-8 lg:max-w-[720px] lg:mx-auto transition-opacity duration-700
-          ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}
+          className="text-md sm:text-lg text-[var(--light-slate)] mt-[20px] sm:mt-[30px] mb-6 sm:mb-8 lg:max-w-[720px] lg:mx-auto"
         >
           I’m looking for <strong>Product Engineer</strong> or <strong>Full-stack Product Engineer</strong> opportunities where I can help turn ideas into <strong>shipped products</strong>. I’m especially interested in teams that value <strong>communication</strong>, <strong>ownership</strong>, <strong>product thinking</strong>, and <strong>strong technical execution</strong> across frontend, backend, mobile, and infrastructure.
         </p>

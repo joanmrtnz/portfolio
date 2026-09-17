@@ -5,7 +5,7 @@ export default function ProjectText({ project }) {
     <div name="project-text" className="self-start flex flex-col">
       <div className="flex flex-wrap-reverse items-center justify-between gap-3">
 
-        <h2 className="flex items-center text-right text-lg sm:text-2xl font-bold text-[var(--text-color)] transition-opacity duration-700 hover:underline focus-visible:underline focus:outline-none">
+        <h2 className="flex items-center text-right text-lg sm:text-2xl font-bold text-[var(--text-color)] hover:underline focus-visible:underline focus:outline-none">
           <a href={project.url} target="_blank" rel="noopener noreferrer">{project.name}</a>
         </h2>
 
@@ -20,7 +20,7 @@ export default function ProjectText({ project }) {
         </a>
       </div>
  
-      <p className="mt-6 mb-6 text-md sm:text-md text-[var(--slate)] transition-opacity duration-700 delay-200">
+      <p className="mt-6 mb-6 text-md sm:text-md text-[var(--slate)]">
         <span dangerouslySetInnerHTML={{ __html: project.description }}></span>
       </p> 
 

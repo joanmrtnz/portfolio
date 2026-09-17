@@ -1,10 +1,8 @@
 
-import useScrollAnimation from "../hooks/useScrollAnimation";
 import { useState, useEffect } from "react";
 
 
 export default function VoidProjectCard({ project }) {
-  const { ref, isVisible } = useScrollAnimation(0.5);
   const [isMobile, setIsMobile] = useState(false);
 
 
@@ -18,8 +16,7 @@ export default function VoidProjectCard({ project }) {
 
   return (
     <div
-      ref={ref}
-      className={`w-full mb-0 sm:mb-[80px] m-auto text-left relative transition-all duration-700 ease-in-out transform ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
+      className="w-full mb-0 sm:mb-[80px] m-auto text-left relative">
       <div className="w-full rounded-xl p-4 sm:p-4 group">
         <div className="mx-auto grid gap-[15px] md:gap-[50px] mt-0 md:mt-3 grid-cols-1 md:grid-cols-[3fr_2fr]">
           {isMobile ? (
@@ -28,7 +25,7 @@ export default function VoidProjectCard({ project }) {
                 <p className="aspect-[5/4] w-full min-h-[180px] rounded-lg backdrop-blur-lg bg-[var(--white)]/8 animate-pulse"></p>
               </div>
               <div name="project-text" className="self-start flex flex-col">
-                <h2 className="min-h-[20px] rounded-xl transition-opacity duration-700 p-2 text-sm flex items-center animate-pulse">
+                <h2 className="min-h-[20px] rounded-xl p-2 text-sm flex items-center animate-pulse">
                  {project.name}
                 </h2>
                 <p className="min-h-[96px] text-md text-[var(--slate)] rounded-xl ml-1 backdrop-blur-lg bg-[var(--white)]/8 animate-pulse"></p>
@@ -44,7 +41,7 @@ export default function VoidProjectCard({ project }) {
           ) : (
             <>
               <div name="project-text" className="self-start flex flex-col">
-                <h2 className="min-h-[30px] backdrop-blur-lg bg-[var(--white)]/8 rounded-xl transition-opacity duration-700  flex items-center animate-pulse">
+                <h2 className="min-h-[30px] backdrop-blur-lg bg-[var(--white)]/8 rounded-xl  flex items-center animate-pulse">
                 </h2>
                 <p className="min-h-[120px] backdrop-blur-lg bg-[var(--white)]/8 rounded-xl mt-6 mb-6 animate-pulse">
                 </p>

@@ -1,21 +1,18 @@
-import useScrollAnimation from "../hooks/useScrollAnimation";
 import ExperienceCard from "./ExperienceCard";
 import experienceData from "../data/experienceData.json";
 
 
 export default function Experience() {
-  const { ref, isVisible } = useScrollAnimation(0.3);
 
   return (
     <section
-      ref={ref}
       id="experience"
       className="flex w-full items-center justify-center px-0 m-auto"
     >
       <div className="section-readable w-full max-w-[980px] text-center p-6 sm:p-8 md:p-10">
 
         <h2
-          className={`font-mono text-left text-3xl sm:text-4xl font-bold text-[var(--green)] transition-opacity duration-700 delay-100 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}
+          className="font-mono text-left text-3xl sm:text-4xl font-bold text-[var(--green)]"
         >
           Experience
         </h2>
