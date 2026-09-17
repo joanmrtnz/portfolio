@@ -1,4 +1,5 @@
-import { FaGithub, FaLinkedin, FaArrowUp } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FiArrowUp } from "react-icons/fi";
 import { FaXTwitter } from "react-icons/fa6";
 
 export default function Footer() {
@@ -29,7 +30,7 @@ export default function Footer() {
           text-[var(--slate)] font-medium focus:outline-none flex items-center justify-center
           after:absolute after:left-2 after:right-2 after:-bottom-2 after:h-[2px] after:origin-left after:scale-x-0 after:bg-[var(--green)] hover:after:scale-x-100 focus-visible:after:scale-x-100"
         >
-          <FaArrowUp className="text-xl sm:text-2xl" />
+          <FiArrowUp className="text-xl sm:text-2xl" strokeWidth={1.5} />
         </button>
       </div>
     </footer>
