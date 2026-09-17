@@ -31,12 +31,12 @@ export default function Header() {
 
   return (
     <header className="font-mono font-medium bg-[var(--navy)] bg-opacity-90 sm:backdrop-blur-lg sm:bg-[var(--navy)]/70 fixed top-0 w-full z-50 px-6 md:px-[50px] border-b border-[var(--section-outline)]/80">
-      <nav className="h-[80px] w-full flex items-center justify-between  font-semibold text-s/7">
+      <nav className="h-[80px] w-full flex items-center justify-between  type-ui">
 
         <a
           href="#home"
           aria-label="Go to home"
-          className="flex w-20 h-20 md:w-18 md:h-18 items-center font-mono tracking-tighter text-xl font-black text-[var(--green)] transition-colors duration-300 hover:text-[var(--light-green)]"
+          className="flex w-20 h-20 md:w-18 md:h-18 items-center font-mono tracking-tighter text-xl font-semibold text-[var(--green)] transition-colors duration-300 hover:text-[var(--light-green)]"
         >
           mrtnz_
         </a>
@@ -64,7 +64,7 @@ export default function Header() {
 
 
         <div
-          className={`fixed top-0 left-0 w-screen h-[70%] border border-[var(--section-outline)] bg-[var(--navy)] flex flex-col items-end justify-center gap-6 text-xl transition-transform duration-300 ${menuOpen ? "translate-x-0" : "translate-x-full"
+          className={`fixed top-0 left-0 w-screen h-[70%] border border-[var(--section-outline)] bg-[var(--navy)] flex flex-col items-end justify-center gap-6 type-ui transition-transform duration-300 ${menuOpen ? "translate-x-0" : "translate-x-full"
             } md:hidden`}
         >
 

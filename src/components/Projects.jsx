@@ -11,7 +11,7 @@ export default function Projects() {
     >
       <div className="section-readable w-full max-w-[980px] text-center p-6 sm:p-8 md:p-10">
         <h2
-          className="font-mono text-left text-3xl sm:text-4xl font-bold text-[var(--green)]"
+          className="font-mono text-left type-section text-[var(--green)]"
         >
           Projects
         </h2>

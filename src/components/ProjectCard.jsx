@@ -18,7 +18,7 @@ export default function ProjectCard({ project }) {
 
   return (
     <div
-      className="w-full text-left relative pb-10 border-b border-[var(--section-outline)]"
+      className="w-full text-center relative pb-10 border-b border-[var(--section-outline)]"
     >
       <div className="w-full rounded-xl p-4 sm:p-4">
         <div

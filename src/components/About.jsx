@@ -10,28 +10,28 @@ export default function About() {
 
       <div className="section-readable w-full max-w-[980px] text-center p-6 sm:p-8 md:p-10">
 
-        <div className="text-left flex flex-col">
-          <h2 className="font-mono mb-6 text-left text-3xl sm:text-4xl font-bold text-[var(--green)]">
+        <div className="text-center flex flex-col">
+          <h2 className="font-mono mb-6 text-left type-section text-[var(--green)]">
             About me
           </h2>
-          <p className="mt-0 sm:mt-4 mb-7 text-lg text-[var(--light-slate)]">
+          <p className="mt-0 sm:mt-4 mb-7 type-body text-[var(--light-slate)]">
             I&apos;m a <strong>Full-stack Product Engineer</strong> who builds complete digital products across <strong>web</strong>, <strong>mobile</strong>, <strong>backend</strong>, and <strong>deployment</strong>. I like working close to the product: understanding the problem, shaping the solution, communicating tradeoffs, and shipping reliable software that people can actually use.
           </p>
 
-          <p className="mt-4 mb-7 text-lg text-[var(--light-slate)]">
+          <p className="mt-4 mb-7 type-body text-[var(--light-slate)]">
             Outside of coding, I enjoy <strong>Rubik’s cubes</strong>, <strong>drawing</strong>, and <strong>playing bass guitar</strong>. I’ve also competed in <strong>weightlifting</strong> (regional champion), <strong>athletics</strong>, and <strong>judo</strong>, which developed my <strong>discipline</strong>, <strong>resilience</strong>, and <strong>focus</strong>—traits I apply to my work daily.
           </p>
 
-          <p className="mt-4 mb-7 text-lg text-[var(--light-slate)]">
+          <p className="mt-4 mb-7 type-body text-[var(--light-slate)]">
             I use <strong>AI tools</strong> to accelerate development, explore implementation options, improve code quality, and reduce repetitive work while staying focused on <strong>product goals</strong>.
           </p>
 
-          <p className="mt-8 mb-2 text-lg text-[var(--light-slate)]">
+          <p className="mt-8 mb-2 type-body text-[var(--light-slate)]">
             Technologies I&apos;ve worked with recently include:
           </p>
 
-          <div className="font-mono sm:max-w-[250px] mx-auto md:max-w-none md:mx-0">
-            <ol className="list-disc text-sm sm:text-lg text-[var(--tech-list-color)] grid grid-cols-2 gap-x-6 gap-y-3 pl-6 mt-5">
+          <div className="w-full max-w-[65ch] mx-auto text-center">
+            <ol className="list-none type-meta text-[var(--tech-list-color)] grid grid-cols-1 min-[400px]:grid-cols-2 gap-x-6 gap-y-3 p-0 mt-5">
               <li>TypeScript</li>
               <li>Angular</li>
               <li>Symfony</li>

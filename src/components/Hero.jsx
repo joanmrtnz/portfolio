@@ -2,30 +2,30 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative z-10 pt-40 md:pt-34 flex flex-col items-center justify-center text-left px-0 m-auto"
+      className="relative z-10 w-full pt-40 md:pt-34 flex flex-col items-center justify-center text-left px-0 m-auto"
     >
       <div className="hero-readable w-full max-w-[980px] p-6 sm:p-8 md:p-10">
-        <p className="font-mono text-lg md:text-xl text-[var(--green)] mb-2 md:mb-5">
+        <p className="type-ui text-[var(--green)] mb-2 md:mb-5">
           Hello, I&apos;m
         </p>
 
-        <h1 className="text-4xl md:text-7xl text-[var(--lightest-slate)] font-bold mb-5 md:mb-7">
+        <h1 className="type-display hero-name mb-5 md:mb-7">
           Joan Martinez.
         </h1>
 
-        <h1 className="leading-[1.15] tracking-tight text-[1.6rem] md:text-4xl text-[var(--slate)] md:font-bold">
+        <p className="type-statement text-[var(--slate)]">
             I turn ideas into <br />
-            <span className="text-[1.7rem] md:text-4xl text-[var(--mid-green)]">&gt; shipped products</span>
-        </h1>
+            <span className="text-[var(--green)]">&gt; shipped products</span>
+        </p>
 
-        <p className="font-mono text-base md:text-lg mt-5 text-[var(--slate)] mb-9 md:mb-12">
+        <p className="type-body mt-5 text-[var(--slate)] mb-9 md:mb-12">
           Full-stack Product Engineer focused on web, mobile, backend, infrastructure, and clear product delivery.
         </p>
 
         <div className="mb-2">
           <a
             href="#projects"
-            className="text-[var(--green)] border border-[var(--green)] px-5 py-3 rounded-lg font-medium underline-offset-4 transition-all duration-300 hover:underline focus-visible:underline focus:outline-none"
+            className="text-[var(--green)] border border-[var(--green)] px-5 py-3 rounded-lg type-ui underline-offset-4 transition-all duration-300 hover:underline focus-visible:underline focus:outline-none"
           >
             View product work.
           </a>

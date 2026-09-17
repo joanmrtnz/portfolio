@@ -12,12 +12,12 @@ export default function Experience() {
       <div className="section-readable w-full max-w-[980px] text-center p-6 sm:p-8 md:p-10">
 
         <h2
-          className="font-mono text-left text-3xl sm:text-4xl font-bold text-[var(--green)]"
+          className="font-mono text-left type-section text-[var(--green)]"
         >
           Experience
         </h2>
 
-        <div className="relative mt-8 text-left">
+        <div className="relative mt-8 text-center">
           {experienceData.map((experience, index) => 
                 <ExperienceCard key={index} experience={experience}/>
           )}

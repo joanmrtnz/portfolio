@@ -1,1 +1,5 @@
 @import "tailwindcss";
+
+@theme inline {
+  --font-mono: "Geist Mono", ui-monospace, SFMono-Regular, Consolas, monospace;
+}

@@ -1,0 +1,44 @@
+/* Each item connects to the next marker, including when its text wraps. */
+.experience-timeline {
+  --timeline-gap: 1.5rem;
+  --timeline-marker: 10px;
+  --timeline-line: 2px;
+  list-style: none;
+  padding: 0;
+}
+
+.experience-timeline-item {
+  position: relative;
+  padding-inline-start: 1.75rem;
+}
+
+.experience-timeline-item + .experience-timeline-item {
+  margin-block-start: var(--timeline-gap);
+}
+
+.experience-timeline-item::before {
+  content: "";
+  position: absolute;
+  inset-inline-start: calc((var(--timeline-marker) - var(--timeline-line)) / 2);
+  top: 0.85em;
+  bottom: calc(-1 * var(--timeline-gap) - 0.85em);
+  width: var(--timeline-line);
+  background: var(--section-outline);
+  pointer-events: none;
+}
+
+.experience-timeline-item:last-child::before {
+  content: none;
+}
+
+.experience-timeline-item::after {
+  content: "";
+  position: absolute;
+  inset-inline-start: 0;
+  top: calc(0.85em - var(--timeline-marker) / 2);
+  width: var(--timeline-marker);
+  height: var(--timeline-marker);
+  border-radius: 50%;
+  background: var(--green);
+  pointer-events: none;
+}

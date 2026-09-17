@@ -1,17 +1,18 @@
+import "./ExperienceCard.css";
 
 export default function ExperienceCard({ experience }) {
 
     return (
         <div className="relative mb-[3rem] border-b border-[var(--section-outline)] pb-[3rem] last:mb-0 last:border-b-0 last:pb-0">
             <div className="flex items-start justify-between gap-4">
-                <div>
+                <div className="min-w-0 flex-1 text-left">
                     <h3
-                        className="text-xl sm:text-2xl text-[var(--lightest-slate)]"
+                        className="type-title text-[var(--lightest-slate)]"
                     >
                         {experience.position} - [{experience.company}]
                     </h3>
                     <p
-                        className="text-sm text-[var(--light-slate)]"
+                        className="type-meta mt-2 text-[var(--light-slate)]"
                     >
                         {experience.date.start} - {experience.date.end || "Present"}
                     </p>
@@ -26,10 +27,9 @@ export default function ExperienceCard({ experience }) {
                 </a>
             </div>
 
-            <ol className="mt-6 space-y-4 text-md text-[var(--slate)] relative pl-5 before:absolute before:left-[1.3rem] before:top-2 before:h-[calc(100%-0.5rem)] before:w-[2px] before:bg-[var(--dark-slate)]">
+            <ol className="experience-timeline mt-6 type-body text-[var(--slate)]">
                 {experience.tasks.map((item, index) => (
-                    <li key={index} className="relative flex items-start pl-5">
-                        <div className="absolute top-2 left-[-0.25rem] w-3 h-3 bg-[var(--green)] rounded-full"></div>
+                    <li key={index} className="experience-timeline-item">
                         <span dangerouslySetInnerHTML={{ __html: item }}></span>
                     </li>
                 ))}
