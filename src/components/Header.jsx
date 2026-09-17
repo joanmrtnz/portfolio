@@ -76,7 +76,10 @@ export default function Header() {
           </button>
 
           <button
-            onClick={() => setDarkMode(!darkMode)}
+            onClick={() => {
+              setDarkMode((current) => !current);
+              setMenuOpen(false);
+            }}
             className="mr-4 text-[var(--lightest-slate)] text-2xl p-2 rounded-full transition-colors duration-300 hover:bg-gray-700"
           >
             {darkMode ? <FiSun /> : <FiMoon />}
