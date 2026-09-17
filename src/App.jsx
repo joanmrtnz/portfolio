@@ -1,5 +1,5 @@
 import Header from "./components/Header";
-import LogoPerformance from "./components/LogoPerformance";
+import ParticleBackground from "./components/ParticleBackground";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Experience from "./components/Experience";
@@ -10,7 +10,7 @@ import Footer from "./components/Footer";
 export default function App() {
   return (
     <div className="relative min-h-screen overflow-x-clip bg-[var(--navy)]">
-      <LogoPerformance />
+      <ParticleBackground />
       <Header />
       <main className="relative z-10 flex flex-col gap-[110px] lg:gap-[160px] px-6 sm:px-12 md:px-24 lg:px-32 xl:px-[150px]">
         <Hero />
