@@ -245,3 +245,17 @@ strong {
 .light .project-stack-badge {
   color: currentColor;
 }
+
+.nav-section-link {
+  color: var(--lightest-slate);
+}
+
+.light .nav-section-link {
+  color: #000;
+}
+
+.nav-section-link[aria-current="location"],
+.nav-section-link:hover,
+.nav-section-link:focus-visible {
+  color: var(--green);
+}

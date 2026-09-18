@@ -1,8 +1,16 @@
 import { useState, useEffect } from "react";
 import { FiMenu, FiX, FiSun, FiMoon } from "react-icons/fi";
 
+const NAV_ITEMS = [
+  { id: "about", label: "About" },
+  { id: "experience", label: "Experience" },
+  { id: "projects", label: "Projects" },
+  { id: "contact", label: "Contact" },
+];
+
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState("");
   const [darkMode, setDarkMode] = useState(
     localStorage.getItem("darkMode") === "true"
   );
@@ -29,6 +37,42 @@ export default function Header() {
     localStorage.setItem("darkMode", darkMode);
   }, [darkMode]);
 
+  useEffect(() => {
+    const sections = NAV_ITEMS.map(({ id }) => document.getElementById(id)).filter(Boolean);
+    let frameId = 0;
+
+    const updateActiveSection = () => {
+      frameId = 0;
+      const marker = Math.min(window.innerHeight * 0.35, 240);
+      let current = "";
+      for (const section of sections) {
+        if (section.getBoundingClientRect().top <= marker) current = section.id;
+      }
+      // The last section may be too short to reach the marker before the page ends.
+      const atBottom = window.scrollY > 0 &&
+        window.scrollY + window.innerHeight >= document.documentElement.scrollHeight - 2;
+      if (atBottom) current = sections.at(-1)?.id || "";
+      setActiveSection(current);
+    };
+
+    const scheduleUpdate = () => {
+      if (!frameId) frameId = window.requestAnimationFrame(updateActiveSection);
+    };
+
+    updateActiveSection();
+    window.addEventListener("scroll", scheduleUpdate, { passive: true });
+    window.addEventListener("resize", scheduleUpdate);
+    const resizeObserver = new ResizeObserver(scheduleUpdate);
+    sections.forEach((section) => resizeObserver.observe(section));
+
+    return () => {
+      window.cancelAnimationFrame(frameId);
+      window.removeEventListener("scroll", scheduleUpdate);
+      window.removeEventListener("resize", scheduleUpdate);
+      resizeObserver.disconnect();
+    };
+  }, []);
+
   return (
     <header className="font-mono font-medium bg-[var(--navy)] bg-opacity-90 sm:backdrop-blur-lg sm:bg-[var(--navy)]/70 fixed top-0 w-full z-50 px-6 md:px-[50px] border-b border-[var(--section-outline)]/80">
       <nav className="h-[80px] w-full flex items-center justify-between  type-ui">
@@ -49,10 +93,17 @@ export default function Header() {
             {darkMode ? <FiSun /> : <FiMoon />}
           </button>
 
-          <li><a href="#about" className="text-[var(--lightest-slate)] hover:text-[var(--green)] hover:underline focus-visible:underline focus:outline-none px-5 py-2.5">About</a></li>
-          <li><a href="#experience" className="text-[var(--lightest-slate)] hover:text-[var(--green)] hover:underline focus-visible:underline focus:outline-none px-5 py-2.5">Experience</a></li>
-          <li><a href="#projects" className="text-[var(--lightest-slate)] hover:text-[var(--green)] hover:underline focus-visible:underline focus:outline-none px-5 py-2.5">Projects</a></li>
-          <li><a href="#contact" className="text-[var(--green)] hover:underline focus-visible:underline focus:outline-none px-5 py-2.5">Contact</a></li>
+          {NAV_ITEMS.map(({ id, label }) => (
+            <li key={id}>
+              <a
+                href={`#${id}`}
+                aria-current={activeSection === id ? "location" : undefined}
+                className="nav-section-link hover:underline focus-visible:underline focus:outline-none px-5 py-2.5"
+              >
+                {label}
+              </a>
+            </li>
+          ))}
         </ul>
 
         <button
@@ -86,10 +137,17 @@ export default function Header() {
           </button>
 
 
-          <a href="#about" onClick={() => setMenuOpen(false)} className="mr-4 border-b border-dashed text-[var(--lightest-slate)] hover:text-[var(--green)]">About</a>
-          <a href="#experience" onClick={() => setMenuOpen(false)} className="mr-4 border-b border-dashed text-[var(--lightest-slate)] hover:text-[var(--green)]">Experience</a>
-          <a href="#projects" onClick={() => setMenuOpen(false)} className="mr-4 border-b border-dashed text-[var(--lightest-slate)] hover:text-[var(--green)]">Projects</a>
-          <a href="#contact" onClick={() => setMenuOpen(false)} className="mr-4 border-b border-dashed text-[var(--green)] bg-[var(--navy)]">Contact</a>
+          {NAV_ITEMS.map(({ id, label }) => (
+            <a
+              key={id}
+              href={`#${id}`}
+              onClick={() => setMenuOpen(false)}
+              aria-current={activeSection === id ? "location" : undefined}
+              className="nav-section-link mr-4 border-b border-dashed"
+            >
+              {label}
+            </a>
+          ))}
         </div>
       </nav>
     </header>
