@@ -25,7 +25,7 @@ export default function VoidProjectCard({ project }) {
                 <p className="aspect-[5/4] w-full min-h-[180px] rounded-lg backdrop-blur-lg bg-[var(--white)]/8 animate-pulse"></p>
               </div>
               <div name="project-text" className="self-start flex flex-col">
-                <h2 className="min-h-[20px] rounded-xl p-2 type-title flex items-center animate-pulse">
+                <h2 className="coming-soon-label min-h-[20px] rounded-xl p-2 type-title flex items-center animate-pulse">
                  {project.name}
                 </h2>
                 <p className="w-full min-h-[96px] rounded-xl backdrop-blur-lg bg-[var(--white)]/8 animate-pulse"></p>
@@ -45,7 +45,7 @@ export default function VoidProjectCard({ project }) {
                 </h2>
                 <p className="min-h-[120px] backdrop-blur-lg bg-[var(--white)]/8 rounded-xl mt-6 mb-6 animate-pulse">
                 </p>
-                <p className="min-h-[20px] type-body text-[var(--slate)] rounded-xl mt-4 mb-6 ml-1 animate-pulse">
+                <p className="coming-soon-label min-h-[20px] type-body rounded-xl mt-4 mb-6 ml-1 animate-pulse">
                   {project.name}
                 </p>
                 <ul className="mt-2 flex flex-wrap text-left">

@@ -259,3 +259,7 @@ strong {
 .nav-section-link:focus-visible {
   color: var(--green);
 }
+
+.coming-soon-label {
+  color: color-mix(in oklab, var(--white) 45%, transparent);
+}
